@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+footer {
+  margin: 0 auto;
+  justify-content: center;
+  background-color: #822300;
+}
+footer section .FootContent {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer section .FootContent .footerContent a {
+  color: white;
+  font-size: 10px;
+  text-decoration: none;
+}
+footer section .FootContent .footerContent :hover {
+  color: #FF4600;
+}
+footer section .FootContent .footerContent li {
+  list-style: none;
+}
