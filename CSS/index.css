@@ -210,7 +210,7 @@ body {
 }
 
 .upButton:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #000000; /* Add a dark-grey background on hover */
 }
 
 .mainPage {
@@ -221,4 +221,11 @@ body {
 .mainPage .right {
   background-color: #303050;
   height: 100vh;
+}
+
+.copyWr {
+  color: white;
+  font-size: 10px;
+  font-weight: 300;
+  word-spacing: 2px;
 }
