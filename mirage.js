@@ -71,28 +71,27 @@ function scrollFunction() {
     scrollTopButton.style.display = "none";
   }
 }
+// Next butto for politics
+
+let forPolitics = document.getElementById('forPolitics')
+let politicsReveal = document.querySelector('politicsReveal')
+let politicsSection = document.getElementById('politicsSection')
+let healthSec = document.getElementById('healthSec')
+let HealthSection = document.getElementById('HealthSection')
+
+let upButton = document.getElementById('upButton')
 
 function scrollTopButt() {
      document.documentElement.scrollTop = 0; 
+     politicsSection.style.display = "none";
 }
 
-// down button
-// let scrolldownButton = document.getElementById("downButton");
 
-// scrolls down 30px, then appear
-// window.onscroll += function scrollFunction(){};
-// window.onscroll = function scrollFunction(){};
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   if (document.body.scrollBottom < 30 || document.documentElement.scrollBottom < 30) {
-//     scrolldownButton.style.display = "block";
-//   } else {
-//     scrolldownButton.style.display = "none";
-//   }
-// }
-
-// function scrolldownButt() {
-//      document.documentElement.scrollBottom = 0; 
-// }
-
+function nextSectionn() {
+  politicsSection.style.display = "block";
+  forPolitics.style.display= "none";
+}
+function nextSectionnHealth() {
+  HealthSection.style.display = "block";
+  healthSec.style.display ="none";
+}

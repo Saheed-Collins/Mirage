@@ -347,6 +347,230 @@ body {
 
 }
 
+// Politics Section
+.PoliticsSec {
+    display: none;
+    opacity: 1;
+    transition: opacity 1s ease-in;
+    background: rgb(210, 210, 210);
+    height: 100%;
+    margin: 0 auto;
+//    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    // .visible {
+    //     opacity: 2;
+    //   transition: opacity 0.5s ease-in;
+    // }
+    .Heeero{
+        
+        // margin-top: 3%;
+        // border: 1px solid rgb(102, 69, 69);
+        margin-left: 10%;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        // border: 1px solid white;
+        // width: 80;
+        // border: 1px solid white;
+    
+    .HeroTextLeft{
+        // width: 40%;
+        // margin-top: 3%;
+        // border: 2px solid white;
+        justify-content: center;
+        text-align: left;
+        // color: rgb(255,70,0);
+        color: white;
+        h1, h3{
+            font-size: 80px;
+            font-weight: 900;
+            line-height: 80px;
+            @media (max-width: 964px)  {
+                font-size: 50px;
+                line-height: 60px;
+            }
+            @media (max-width: 592px)  {
+                font-size: 45px;
+                line-height: 60px;
+            }
+            span {
+                color: rgba(255,70,0,1);
+            }
+            
+        }
+        .welcome {
+            font-size: 24px;
+            color: rgba(255,70,0,1);
+        }
+        .conteNT{
+            color: rgb(96, 96, 96);
+        }
+        .Hoverbtn {
+            // background-color: rgba(255,70,0,1);
+            color: rgb(0, 0, 0);
+            border: 1px solid rgba(255,70,0,1);;
+            transition: 1s ease-in-out;
+            background: transparent;
+          
+        }.Hoverbtn:hover {
+            color: white;
+            transition: 0.5s ease-in-out;
+            background: #ee4400;
+            border: 1px solid white;
+          }
+
+
+
+
+        h2{
+            span{
+                // text-decoration: underline;
+                color: rgba(255,70,0,1);
+                // font-style: italic;
+                
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+        }
+
+
+    }
+    .HeroTextRight{
+        // background-color: #444d79;
+        // border-radius: 20px;
+        // border: 2px solid white;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+
+        img{
+            width: 100%;
+        }
+    }
+    }
+
+}
+
+// Health Section
+.HealthSec {
+    display: none;
+    opacity: 1;
+    transition: opacity 1s ease-in;
+    background: rgb(210, 210, 210);
+    height: 100%;
+    margin: 0 auto;
+//    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    // .visible {
+    //     opacity: 2;
+    //   transition: opacity 0.5s ease-in;
+    // }
+    .Heeero{
+        
+        // margin-top: 3%;
+        // border: 1px solid rgb(102, 69, 69);
+        margin-left: 10%;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        // border: 1px solid white;
+        // width: 80;
+        // border: 1px solid white;
+    
+    .HeroTextLeft{
+        // width: 40%;
+        // margin-top: 3%;
+        // border: 2px solid white;
+        justify-content: center;
+        text-align: left;
+        // color: rgb(255,70,0);
+        color: white;
+        h1, h3{
+            font-size: 80px;
+            font-weight: 900;
+            line-height: 80px;
+            @media (max-width: 964px)  {
+                font-size: 50px;
+                line-height: 60px;
+            }
+            @media (max-width: 592px)  {
+                font-size: 45px;
+                line-height: 60px;
+            }
+            span {
+                color: rgba(255,70,0,1);
+            }
+            
+        }
+        .welcome {
+            font-size: 24px;
+            color: rgba(255,70,0,1);
+        }
+        .conteNT{
+            color: rgb(96, 96, 96);
+        }
+        .Hoverbtn {
+            // background-color: rgba(255,70,0,1);
+            color: rgb(0, 0, 0);
+            border: 1px solid rgba(255,70,0,1);;
+            transition: 1s ease-in-out;
+            background: transparent;
+          
+        }.Hoverbtn:hover {
+            color: white;
+            transition: 0.5s ease-in-out;
+            background: #ee4400;
+            border: 1px solid white;
+          }
+
+        h2{
+            span{
+                // text-decoration: underline;
+                color: rgba(255,70,0,1);
+                // font-style: italic;
+                
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+        }
+
+
+    }
+    .HeroTextRight{
+        // background-color: #444d79;
+        // border-radius: 20px;
+        // border: 2px solid white;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+
+        img{
+            width: 100%;
+        }
+    }
+    }
+
+}
+
+// nextbuttons
+.nextButton {
+    background-color: #ee4400;
+    color: white;
+    border: none;
+}
+.nextButton:hover{
+    background-color: black;
+    color: white;
+    transition: .25s ease-in-out;
+    letter-spacing: 10px;
+}
+
 
 // jump button
 
