@@ -16,11 +16,13 @@ body {
   text-align: center;
 }
 .heroPage .Heeero {
-  margin-top: 2%;
-  margin-left: 5%;
-  width: 90%;
+  margin-top: 3%;
+  margin-left: 10%;
+  width: 80%;
+  display: flex;
   align-items: center;
   justify-content: center;
+  justify-items: center;
 }
 .heroPage .Heeero .HeroTextLeft {
   justify-content: center;
@@ -51,12 +53,23 @@ body {
   font-size: 24px;
   color: rgb(178, 178, 178);
 }
+.heroPage .Heeero .HeroTextLeft .conteNT {
+  color: rgb(158, 158, 158);
+}
+.heroPage .Heeero .HeroTextLeft .Hoverbtn {
+  color: white;
+  border: none;
+  transition: 1s ease-in-out;
+  background: transparent;
+}
+.heroPage .Heeero .HeroTextLeft .Hoverbtn:hover {
+  transition: 0.5s ease-in-out;
+  background: #ee4400;
+  border: 1px solid white;
+}
 .heroPage .Heeero .HeroTextLeft h2 span {
   color: rgb(255, 70, 0);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-.heroPage .Heeero .HeroTextLeft button {
-  color: rgb(255, 70, 0);
 }
 .heroPage .Heeero .HeroTextRight {
   display: flex;
@@ -186,6 +199,78 @@ body {
 .box {
   height: 90px;
   background-color: black;
+}
+
+.PostSections {
+  background: rgb(233, 233, 233);
+  height: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+.PostSections .Heeero {
+  margin-left: 10%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.PostSections .Heeero .HeroTextLeft {
+  justify-content: center;
+  text-align: left;
+  color: white;
+}
+.PostSections .Heeero .HeroTextLeft h1, .PostSections .Heeero .HeroTextLeft h3 {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 80px;
+}
+@media (max-width: 964px) {
+  .PostSections .Heeero .HeroTextLeft h1, .PostSections .Heeero .HeroTextLeft h3 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 592px) {
+  .PostSections .Heeero .HeroTextLeft h1, .PostSections .Heeero .HeroTextLeft h3 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
+.PostSections .Heeero .HeroTextLeft h1 span, .PostSections .Heeero .HeroTextLeft h3 span {
+  color: rgb(255, 70, 0);
+}
+.PostSections .Heeero .HeroTextLeft .welcome {
+  font-size: 24px;
+  color: rgb(255, 70, 0);
+}
+.PostSections .Heeero .HeroTextLeft .conteNT {
+  color: rgb(96, 96, 96);
+}
+.PostSections .Heeero .HeroTextLeft .Hoverbtn {
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 70, 0);
+  transition: 1s ease-in-out;
+  background: transparent;
+}
+.PostSections .Heeero .HeroTextLeft .Hoverbtn:hover {
+  color: white;
+  transition: 0.5s ease-in-out;
+  background: #ee4400;
+  border: 1px solid white;
+}
+.PostSections .Heeero .HeroTextLeft h2 span {
+  color: rgb(255, 70, 0);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.PostSections .Heeero .HeroTextRight {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.PostSections .Heeero .HeroTextRight img {
+  width: 100%;
 }
 
 .upButton {
