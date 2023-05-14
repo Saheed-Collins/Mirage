@@ -4,7 +4,17 @@
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
+}
+
+.heroHead {
+  height: 5%;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-color: rgb(255, 0, 0);
+}
+.heroHead img {
+  height: 40%;
 }
 
 .heroPage {
@@ -183,9 +193,13 @@ body {
   align-items: center;
 }
 
-.box {
-  height: 90px;
+.liner {
   background-color: black;
+}
+.liner .line {
+  height: 25px;
+  width: 100%;
+  margin-top: 0;
 }
 
 .upButton {
