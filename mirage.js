@@ -76,22 +76,63 @@ function scrollFunction() {
 let forPolitics = document.getElementById('forPolitics')
 let politicsReveal = document.querySelector('politicsReveal')
 let politicsSection = document.getElementById('politicsSection')
+
 let healthSec = document.getElementById('healthSec')
 let HealthSection = document.getElementById('HealthSection')
 
+let scienceSection = document.getElementById('scienceSection')
+let scienceSec = document.getElementById('scienceSec')
+
+let revealEdu = document.getElementById('revealEdu')
+
+let postSections = document.getElementById ('PostSections')
+
 let upButton = document.getElementById('upButton')
+
 
 function scrollTopButt() {
      document.documentElement.scrollTop = 0; 
-     politicsSection.style.display = "none";
+    // window.location.reload()
+
+    
+
+    //  let's make the jump button to clear all sections while going back up
+    //  politicsSection.style.display = "none";
+    //  postSections.style.display = "none";
+    //  HealthSection.style.display = "none";
 }
 
+// there;s no need for this function again, explore button should reveal 2 sections at the same time instead
+// function nextSectionn() {
+//   politicsSection.style.display = "block";
+//   politicsSection.style.transition = "opacity 5s ease-in";
+//   forPolitics.style.display= "none";
+// }
 
-function nextSectionn() {
-  politicsSection.style.display = "block";
-  forPolitics.style.display= "none";
-}
+// button to reveal health and science section
 function nextSectionnHealth() {
   HealthSection.style.display = "block";
+  scienceSection.style.display = "block"
   healthSec.style.display ="none";
 }
+
+// button to reveal poliics and education section
+function revealEducation() {
+  postSections.style.display = "block";
+  politicsSection.style.display = "block";
+
+  forPolitics.style.display= "none";
+}
+
+let whatsA = document.getElementById('whatsA')
+
+function whatAppChat() {
+  whatsA.style.display = "block"
+}
+
+function whatsLink() {
+  whatsA.style.display = "none"
+}
+// function revealEdu() {
+//   postSections.style.display = "block";
+// }

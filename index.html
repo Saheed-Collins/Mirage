@@ -99,11 +99,12 @@
                   <div class="text">Politics</div>
                 </div>
 
-                <div class="center">
-                <span> <a href="./Explore.html"><img src="./Assets/Mirage icon.png" alt=""></a> </span>
+                <div class="center" onclick="revealEducation()" id="revealEdu">
+
+                <!-- <span> <img src="./Assets/Mirage icon.png" alt=""></span> -->
+                <span> <img src="./Assets/Mirage icon.png" alt=""></span>
                 <!-- <div class="explainer"><span>EXPLORE </span></div> -->
-                  
-                  <!-- <div class="text">Sport</div> -->
+
                   </div>
 
                 <div class="right">
@@ -130,8 +131,8 @@
 <!-- HEROPAGE END -->
 
 <main>
-    <div class="PostSections p-4 py-5">
-        <div class="PostsMargin"> 
+    <div class="PostSections p-4 py-5" id="PostSections">
+        <div class="PostsMargin Eucation "> 
          <div class=" row Heeero d-flex justify-content-center">
  
            <div class="HeroTextLeft col-12 col-md-6 col-lg-6 p-3 ">
@@ -148,21 +149,16 @@
             
              </div> 
 
-<div class="col-lg-1"></div>
+        <div class="col-lg-1"></div>
 
          <div class="HeroTextRight col-12 col-md-6 col-lg-5 ">
              <img src="./Assets/education.jpg" alt="" class="img-fluid">
              <div class="row"></div>
          </div> 
 
-         
- 
-         
- 
-     </div> 
- 
-     </div>
+        </div> 
 
+        </div>
 
      <button onclick="nextSectionn()" id="forPolitics" class="m-4 nextButton p-2 px-4 rounded"> Next <i class="bi bi-arrow-down-circle"></i></button>
    </div> 
@@ -184,30 +180,19 @@
 
        <div class="HeroTextLeft col-12 col-md-6 col-lg-6 p-3 ">
          <h2 class="welcome">Politics</h2>
-         <p class="conteNT">The future of education is already being explored and created at this very moment by teachers and education leaders who dare to disrupt rigid, outdated practices and attitudes and replace them with innovative tools, pedagogies, and ideas. Teachers from all ranges of experiences can benefit from tuning in to education blogs that publish relevant content on a regular basis.
+         <p class="conteNT">We cover politics, culture, and opinion through expert analysis, thoughtful commentary, and in-depth investigations on issues facing Nigerians like you. The Political Insider publishes the authentic conservative voices of political insiders and award-winning contributors who believe in personal responsibility, limited government, free markets, individual liberty, traditional Nigerian values, and a strong national defense.
          </p>
          <hr>
 
             <button class="p-2 px-4 Hoverbtn">View Posts</button>
-       
-
-
-
-        
+ 
          </div> 
-
-
-    
-
-     
-
-     
 
  </div> 
 
  </div>
 
- <button onclick="nextSectionnHealth()" id="healthSec" class="m-4 nextButton p-2 px-4 rounded"> Next <i class="bi bi-arrow-down-circle"></i></button>
+ <button onclick="nextSectionnHealth()" id="healthSec" class="m-4 nextButton p-2 px-4 rounded"> More <i class="bi bi-arrow-down-circle"></i></button>
 
 </div>
 <!-- politic section ends -->
@@ -218,17 +203,50 @@
     <div> 
      <div class=" row Heeero d-flex justify-content-center">
 
-        <div class="HeroTextRight col-12 col-md-6 col-lg-5 ">
-         <img src="./Assets/PoliticsImage.jpg" alt="" class="img-fluid">
+       <div class="HeroTextLeft col-12 col-md-6 col-lg-6 p-3 ">
+         <h2 class="welcome">Health</h2>
+         <p class="conteNT">Sleep plays a huge role in both physical and mental health, yet research suggests that most Americans struggle to get the quality rest they need. This topic is often underrepresented in health and wellness blogs, causing readers to assume that nutrition and fitness are far more important. 
+         </p>
+         <hr>
+
+            <button class="p-2 px-4 Hoverbtn">View Posts</button>
+    
+         </div> 
+
+         <div class="col-lg-1"></div>
+
+<div class="HeroTextRight col-12 col-md-6 col-lg-5 ">
+         <img src="./Assets/HealthImage.jpg" alt="" class="img-fluid">
          <div class="row"></div>
      </div> 
 
-     
-<div class="col-lg-1"></div>
+
+
+
+ </div> 
+
+ </div>
+
+ 
+
+</div>
+<!-- Health section ends -->
+
+<!-- Science section -->
+<div class="PostSections scienceSec p-4 py-5" id="scienceSection">
+    <div> 
+     <div class=" row Heeero d-flex justify-content-center">
+
+<div class="HeroTextRight col-12 col-md-6 col-lg-5 ">
+         <img src="./Assets/science Image.jpg" alt="" class="img-fluid">
+         <div class="row"></div>
+     </div> 
+
+ <div class="col-lg-1"></div>
 
        <div class="HeroTextLeft col-12 col-md-6 col-lg-6 p-3 ">
-         <h2 class="welcome">Health</h2>
-         <p class="conteNT">The future of education is already being explored and created at this very moment by teachers and education leaders who dare to disrupt rigid, outdated practices and attitudes and replace them with innovative tools, pedagogies, and ideas. Teachers from all ranges of experiences can benefit from tuning in to education blogs that publish relevant content on a regular basis.
+         <h2 class="welcome">Science</h2>
+         <p class="conteNT">science has never been so accessible. Entire scientific communities now connect through social media, and science blogs have prospered and grown into rich platforms of discourse. On the Internet, experts and amateurs alike can come together to talk about the topics that interest them, and in doing so have created great educational spaces for anyone who wants to learn and discuss science.
          </p>
          <hr>
 
@@ -240,12 +258,10 @@
 
  </div>
 
- 
+ <button onclick="nextSectionnHealth()" id="healthSec" class="m-4 nextButton p-2 px-4 rounded"> More <i class="bi bi-arrow-down-circle"></i></button>
 
 </div>
-
-<!-- Health section ends -->
-
+<!-- Science section ends -->
 
 
 </main>
@@ -255,7 +271,13 @@
 <!-- jump button -->
 
     <button onclick="scrollTopButt()" id="upButton" class="upButton"><i class="bi bi-arrow-up-circle"></i></button>
+    
+    <button onclick="whatAppChat()" id="whatsAppChat" class="whatsAppChat"><i class="bi bi-whatsapp"></i></button>
 
+    <!-- whatsapp link -->
+    <div class="p-2  rounded shadow-xxl whatsA" id="whatsA" onclick="whatsLink()"><a href="https://wa.me/message/U7KG2IL274HYC1"> <span class="p-2"><i class="bi bi-whatsapp"></i></span>Chat with Collins </a></div>
+
+    <!-- Jump button end -->
 
 
     <!-- Footer -->
