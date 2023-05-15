@@ -32,6 +32,9 @@ body {
   color: #ee4400;
   font-weight: 700;
 }
+.Edu .mainSection .eachPost {
+  margin-bottom: 30px;
+}
 .Edu .mainSection .box {
   height: 200px;
 }
