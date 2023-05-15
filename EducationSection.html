@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/EducationSection.css">
     <link rel="stylesheet" href="./CSS/footer.css">
     <link rel="stylesheet" href="./CSS/nav.css">
-    <link rel="stylesheet" href="./CSS/explore.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
@@ -17,7 +18,7 @@
 
     <!-- Nav Bar -->
     
-    <nav class="navBar container-fluid">
+    <nav class="navBar container-fluid" id="navBar">
 
         <div class="row navAlign">
             
@@ -28,7 +29,7 @@
             
             <div class="image col-3 col-md-3 col-lg-2">
                <!-- <center> <img class="justify-content-center " src="./Assets/Mirage white logo.png" alt=""></center> -->
-               <center> <a href="./index.html"><img class="justify-content-center " src="./Assets/Mirage gif.gif" alt=""></a> </center>
+               <center><a href="./index.html"><img class="justify-content-center " src="./Assets/Mirage gif.gif" alt=""></a></center>
             </div>
 
             <div class="col-lg-2 d-none d-lg-block"></div>
@@ -61,79 +62,30 @@
 
 <!-- HEROPAGE -->
 <div class="heroHead">
-     <img src="./Assets/Explore image.jpg" alt="" class="img-fluid">
-     <!-- afaf -->
+    <img src="./Assets/EducationImage.jpg" alt="" class="img-fluid">
+    <!-- afaf -->
 </div>
-<section class="Hero">
-    <div class="heroPage">
-       <div> 
-        <div class=" row Heeero d-flex justify-content-center">
-
-        <div class="HeroTextLeft col-12 col-md-6 col-lg-6 p-3 ">
-            <h2 class="welcome">Welcome to my blog!</h2>
-            <h1>Where What is, may not. <span class="define"> it's mirage!</span></h1>
-           
-            <hr>
-            
-            <h2> <span class="sectionSpan" id="sectionNew"></span>  Articles..</h2>
-            <br>
-            <!-- <button class="exploreBotton p-3 rounded border border-0 px-5"> EXPLORE </button> -->
-
-
-           
-            </div>
-
-        <div class="col-lg-1"></div>
-<div class="HeroTextRight col-12 col-md-6 col-lg-5 ">
-           
-        </div>    
-        
-
-    </div> 
-
-     <div class="Explore container-fluid mb-4">
-                <div class="leftEdge">
-                    <img src="./Assets/education.svg" alt="">
-                  <div class="text">Education</div>
-                </div>
-
-                <div class="left">
-                    <img src="./Assets/Politics.svg" alt="">
-                  <div class="text">Politics</div>
-                </div>
-
-                <div class="center">
-                <span> <img src="./Assets/Mirage icon.png" alt=""></span>
-                <!-- <div class="explainer"><span>EXPLORE </span></div> -->
-                  
-                  <!-- <div class="text">Sport</div> -->
-                  </div>
-
-                <div class="right">
-                    <img src="./Assets/health.svg" alt="">
-                  <div class="text">Health</div>
-                </div>
-
-                <div class="rightEdge">
-                    <img src="./Assets/science.svg" alt="">
-                  <div class="text">Science</div>
-                </div>
-        </div>
-    </div>
-  </div>  
-
-  <!-- art line divider -->
-   <!-- <div class="liner"> <img src="./Assets/line.png" alt="" class="line">   </div> -->
-
-</section>
 <!-- HEROPAGE END -->
 
+<main>
+    <div class="Edu p-4 row">
 
+    </div>
+
+</main>
  
+
+
 <!-- jump button -->
 
     <button onclick="scrollTopButt()" id="upButton" class="upButton"><i class="bi bi-arrow-up-circle"></i></button>
+    
+    <button onclick="whatAppChat()" id="whatsAppChat" class="whatsAppChat"><i class="bi bi-whatsapp"></i></button>
 
+    <!-- whatsapp link -->
+    <div class="p-2  rounded shadow-xxl whatsA" id="whatsA" onclick="whatsLink()"><a href="https://wa.me/message/U7KG2IL274HYC1"> <span class="p-2"><i class="bi bi-whatsapp"></i></span>Chat with Collins </a></div>
+
+    <!-- Jump button end -->
 
 
     <!-- Footer -->
@@ -184,18 +136,82 @@
             </div>
          
             <div class="footerContent p-4">
-                <a href=""><li class="py-1"><span>Email:</span> <br> talk2voluxe@outlook.com</li></a>
-                <a href=""><li class="py-1"><span>Telephone:</span> <br> 909 164 6129</li></a>
+                <a href=""><li class="py-1"><span>Email:</span> <br> mirageblog@webmail.com</li></a>
+                <a href=""><li class="py-1"><span>Telephone:</span> <br> 8069720886</li></a>
                 <a href=""><li class="py-1"> <span> Address</span> : <br> No 12, oba akran avenue, ikeja, lagos.</li></a>
             </div>
      </div>
 
      <div class="copyWr"> <center> EACH POST IS NOT WHAT IT IS, DEFINE YOUR FAKE <br> (c) Saheed C. 2023 </center></div>
     </section>
-    </section>
-    </footer>
+
+</footer>
     <!-- fooer end -->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-<script src="./mirage.js"></script>
+<!-- <script src="./mirage.js"></script> -->
+<script>
+ document.getElementById('todayDate').innerHTML = new Date() 
+ 
+
+// jump button
+
+
+let scrollTopButton = document.getElementById("upButton");
+
+// scrolls down 30px, then appear
+// window.onscroll += function scrollFunction(){};
+window.onscroll = function scrollFunction(){};
+// window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    // scrollTopButton.style.display = "none";
+    navBar.style.position = "fixed"
+
+  } else {
+    scrollTopButton.style.display = "none";
+  }
+}
+// jump button
+
+let upButton = document.getElementById('upButton')
+
+// navbar
+let navBar = document.getElementById('navBar')
+let scrollNavBar;
+
+
+function scrollTopButt() {
+     document.documentElement.scrollTop = 0; 
+    // window.location.reload()
+}
+
+let whatsA = document.getElementById('whatsA')
+let chatOff;
+
+
+function whatAppChat() {
+//  clearTimeout(chatOff); 
+ if (whatsA.style.display === "none") {
+  whatsA.style.display = "block"
+
+ setTimeout(() => {
+    whatsA.style.display = "none";
+  }, 2000);
+ } else {
+  whatsA.style.display = "none"
+ }
+//  whatsA.style.display = "block"
+
+}
+
+
+function whatsLink() {
+  whatsA.style.display = "none"
+}
+// function revealEdu() {
+//   postSections.style.display = "block"; 
+// }
+</script>
 </html>

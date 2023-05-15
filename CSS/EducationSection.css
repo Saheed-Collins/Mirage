@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500&display=swap");
+* {
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+body {
+  background-color: rgb(143, 130, 130);
+}
+
+.heroHead {
+  background-image: url(/Assets/EducationImage.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  background-color: rgb(255, 0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.upButton {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  width: 35px;
+  background-color: rgb(255, 70, 0);
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 100px;
+  font-size: 18px;
+}
+
+.upButton:hover {
+  background-color: #000000; /* Add a dark-grey background on hover */
+}
+
+.copyWr {
+  color: white;
+  font-size: 10px;
+  font-weight: 300;
+  word-spacing: 2px;
+}

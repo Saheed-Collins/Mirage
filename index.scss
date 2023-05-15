@@ -245,7 +245,7 @@ body {
 
 
 .box {
-    height: 90px;
+    height: 10px;
     background-color: black;
 }
 
@@ -346,15 +346,14 @@ body {
             width: 100%;
             -webkit-transform: scale(0.5);
 	        transform: scale(1);
-	        -webkit-transition: 1s ease-in-out;
-	        transition: 1s ease-in-out;
-           
+	        -webkit-transition: 0.5s ease-in-out;
+	        transition: 0.5s ease-in-out ;
         }
+
         img:hover{
             -webkit-transform: scale(1.1);
             transform: scale(1.1);
             border-radius: 20px;
-        
         }
     }
     }
@@ -446,7 +445,7 @@ body {
     background-color: #000000; 
   }
 
-
+// whatsapp icon
   .whatsAppChat {
     display: block; 
     position: fixed; 
