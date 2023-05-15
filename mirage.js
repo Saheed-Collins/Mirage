@@ -131,14 +131,28 @@ function revealEducation() {
 }
 
 let whatsA = document.getElementById('whatsA')
+let chatOff;
+
 
 function whatAppChat() {
+//  clearTimeout(chatOff); 
+ if (whatsA.style.display === "none") {
   whatsA.style.display = "block"
+
+ setTimeout(() => {
+    whatsA.style.display = "none";
+  }, 2000);
+ } else {
+  whatsA.style.display = "none"
+ }
+//  whatsA.style.display = "block"
+
 }
+
 
 function whatsLink() {
   whatsA.style.display = "none"
 }
 // function revealEdu() {
-//   postSections.style.display = "block";
+//   postSections.style.display = "block"; 
 // }
