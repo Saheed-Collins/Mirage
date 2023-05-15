@@ -273,6 +273,12 @@ body {
 }
 .PostSections .Heeero .HeroTextRight img {
   width: 100%;
+  transform: scale(1);
+  transition: 1s ease-in-out;
+}
+.PostSections .Heeero .HeroTextRight img:hover {
+  transform: scale(1.1);
+  border-radius: 20px;
 }
 
 .PoliticsSec {
@@ -284,70 +290,6 @@ body {
   margin: 0 auto;
   justify-content: center;
   text-align: center;
-}
-.PoliticsSec .Heeero {
-  margin-left: 10%;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-}
-.PoliticsSec .Heeero .HeroTextLeft {
-  justify-content: center;
-  text-align: left;
-  color: white;
-}
-.PoliticsSec .Heeero .HeroTextLeft h1, .PoliticsSec .Heeero .HeroTextLeft h3 {
-  font-size: 80px;
-  font-weight: 900;
-  line-height: 80px;
-}
-@media (max-width: 964px) {
-  .PoliticsSec .Heeero .HeroTextLeft h1, .PoliticsSec .Heeero .HeroTextLeft h3 {
-    font-size: 50px;
-    line-height: 60px;
-  }
-}
-@media (max-width: 592px) {
-  .PoliticsSec .Heeero .HeroTextLeft h1, .PoliticsSec .Heeero .HeroTextLeft h3 {
-    font-size: 45px;
-    line-height: 60px;
-  }
-}
-.PoliticsSec .Heeero .HeroTextLeft h1 span, .PoliticsSec .Heeero .HeroTextLeft h3 span {
-  color: rgb(255, 70, 0);
-}
-.PoliticsSec .Heeero .HeroTextLeft .welcome {
-  font-size: 24px;
-  color: rgb(255, 70, 0);
-}
-.PoliticsSec .Heeero .HeroTextLeft .conteNT {
-  color: rgb(96, 96, 96);
-}
-.PoliticsSec .Heeero .HeroTextLeft .Hoverbtn {
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 70, 0);
-  transition: 1s ease-in-out;
-  background: transparent;
-}
-.PoliticsSec .Heeero .HeroTextLeft .Hoverbtn:hover {
-  color: white;
-  transition: 0.5s ease-in-out;
-  background: #ee4400;
-  border: 1px solid white;
-}
-.PoliticsSec .Heeero .HeroTextLeft h2 span {
-  color: rgb(255, 70, 0);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-.PoliticsSec .Heeero .HeroTextRight {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-}
-.PoliticsSec .Heeero .HeroTextRight img {
-  width: 100%;
 }
 
 .HealthSec {
@@ -361,70 +303,6 @@ body {
   text-align: center;
   position: relative;
 }
-.HealthSec .Heeero {
-  margin-left: 10%;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-}
-.HealthSec .Heeero .HeroTextLeft {
-  justify-content: center;
-  text-align: left;
-  color: white;
-}
-.HealthSec .Heeero .HeroTextLeft h1, .HealthSec .Heeero .HeroTextLeft h3 {
-  font-size: 80px;
-  font-weight: 900;
-  line-height: 80px;
-}
-@media (max-width: 964px) {
-  .HealthSec .Heeero .HeroTextLeft h1, .HealthSec .Heeero .HeroTextLeft h3 {
-    font-size: 50px;
-    line-height: 60px;
-  }
-}
-@media (max-width: 592px) {
-  .HealthSec .Heeero .HeroTextLeft h1, .HealthSec .Heeero .HeroTextLeft h3 {
-    font-size: 45px;
-    line-height: 60px;
-  }
-}
-.HealthSec .Heeero .HeroTextLeft h1 span, .HealthSec .Heeero .HeroTextLeft h3 span {
-  color: rgb(255, 70, 0);
-}
-.HealthSec .Heeero .HeroTextLeft .welcome {
-  font-size: 24px;
-  color: rgb(255, 70, 0);
-}
-.HealthSec .Heeero .HeroTextLeft .conteNT {
-  color: rgb(96, 96, 96);
-}
-.HealthSec .Heeero .HeroTextLeft .Hoverbtn {
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 70, 0);
-  transition: 1s ease-in-out;
-  background: transparent;
-}
-.HealthSec .Heeero .HeroTextLeft .Hoverbtn:hover {
-  color: white;
-  transition: 0.5s ease-in-out;
-  background: #ee4400;
-  border: 1px solid white;
-}
-.HealthSec .Heeero .HeroTextLeft h2 span {
-  color: rgb(255, 70, 0);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-.HealthSec .Heeero .HeroTextRight {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-}
-.HealthSec .Heeero .HeroTextRight img {
-  width: 100%;
-}
 
 .scienceSec {
   display: none;
@@ -436,70 +314,6 @@ body {
   justify-content: center;
   text-align: center;
   position: relative;
-}
-.scienceSec .Heeero {
-  margin-left: 10%;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-}
-.scienceSec .Heeero .HeroTextLeft {
-  justify-content: center;
-  text-align: left;
-  color: white;
-}
-.scienceSec .Heeero .HeroTextLeft h1, .scienceSec .Heeero .HeroTextLeft h3 {
-  font-size: 80px;
-  font-weight: 900;
-  line-height: 80px;
-}
-@media (max-width: 964px) {
-  .scienceSec .Heeero .HeroTextLeft h1, .scienceSec .Heeero .HeroTextLeft h3 {
-    font-size: 50px;
-    line-height: 60px;
-  }
-}
-@media (max-width: 592px) {
-  .scienceSec .Heeero .HeroTextLeft h1, .scienceSec .Heeero .HeroTextLeft h3 {
-    font-size: 45px;
-    line-height: 60px;
-  }
-}
-.scienceSec .Heeero .HeroTextLeft h1 span, .scienceSec .Heeero .HeroTextLeft h3 span {
-  color: rgb(255, 70, 0);
-}
-.scienceSec .Heeero .HeroTextLeft .welcome {
-  font-size: 24px;
-  color: rgb(255, 70, 0);
-}
-.scienceSec .Heeero .HeroTextLeft .conteNT {
-  color: rgb(96, 96, 96);
-}
-.scienceSec .Heeero .HeroTextLeft .Hoverbtn {
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 70, 0);
-  transition: 1s ease-in-out;
-  background: transparent;
-}
-.scienceSec .Heeero .HeroTextLeft .Hoverbtn:hover {
-  color: white;
-  transition: 0.5s ease-in-out;
-  background: #ee4400;
-  border: 1px solid white;
-}
-.scienceSec .Heeero .HeroTextLeft h2 span {
-  color: rgb(255, 70, 0);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-.scienceSec .Heeero .HeroTextRight {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-}
-.scienceSec .Heeero .HeroTextRight img {
-  width: 100%;
 }
 
 .nextButton {

@@ -66,7 +66,9 @@ window.onscroll = function scrollFunction(){};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    scrollTopButton.style.display = "none";
+    // scrollTopButton.style.display = "none";
+    navBar.style.position = "fixed"
+
   } else {
     scrollTopButton.style.display = "none";
   }
@@ -87,14 +89,18 @@ let revealEdu = document.getElementById('revealEdu')
 
 let postSections = document.getElementById ('PostSections')
 
+// jump button
+
 let upButton = document.getElementById('upButton')
+
+// navbar
+let navBar = document.getElementById('navBar')
+let scrollNavBar;
 
 
 function scrollTopButt() {
      document.documentElement.scrollTop = 0; 
     // window.location.reload()
-
-    
 
     //  let's make the jump button to clear all sections while going back up
     //  politicsSection.style.display = "none";
