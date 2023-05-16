@@ -12,8 +12,7 @@ body {
   justify-content: center;
 }
 .heroHead .boxHeader {
-  background: rgb(228, 95, 0);
-  background: linear-gradient(15deg, rgb(228, 95, 0) 0%, rgb(106, 41, 0) 50%, rgb(238, 68, 0) 100%);
+  background-color: black;
   color: white;
   font-size: 3rem;
   font-weight: 700;
@@ -52,6 +51,7 @@ body {
 }
 .mainSection p {
   color: #464646;
+  font-size: 22px;
 }
 .mainSection a {
   text-decoration: none;
@@ -69,6 +69,16 @@ body {
 }
 .mainSection .postBody a:hover {
   color: #c0c0c0;
+}
+.mainSection .postBody span {
+  color: #ee4400;
+  font-weight: 600;
+}
+
+.nextANDPrevios {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .Hoverbtn {
