@@ -1,0 +1,7 @@
+let pagePostHeropage = document.getElementById('pagePostHeropage')
+let postTagline = document.getElementById('postTagline')
+let postHeading = document.getElementById ('postHeading')
+let postSmall = document.getElementById ('postSmall')
+let authorDate = document.getElementById ('authorDate')
+let postImage = document.getElementById ('postImage')
+let postBody = document.getElementById ('postBody')
