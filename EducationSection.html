@@ -35,8 +35,9 @@
             <div class="col-lg-2 d-none d-lg-block"></div>
 
             <div class="col-6 col-md-4 col-lg-3 d-flex">
-                <input type="search" name="" class="searchBar p-2 w-75 " id="" placeholder="search the web... ">
-                <i class="bi bi-search search p-2 fw-bold"></i>
+               
+                <input type="search" name="" class="searchBar p-2 w-75 " id="searchBar" onkeyup=""  placeholder="search for post... ">
+                <i class="bi bi-search search p-2 fw-bold" onclick="lookForPost()"></i>
             </div>
             
         </div>
@@ -62,7 +63,13 @@
 
 <!-- HEROPAGE -->
 <div class="heroHead">
+     <div class="p-4">
+        <h3 class="topic">EDUCATION SECTION</h3>
+        <p>The future of education is already being explored and created at this very moment. <br> Check out few articles about education.</p>
+    </div>
     <img src="./Assets/EducationImage.jpg" alt="" class="img-fluid">
+
+    
     <!-- afaf -->
 </div>
 <!-- HEROPAGE END -->
@@ -328,4 +335,6 @@ function whatsLink() {
 //   postSections.style.display = "block"; 
 // }
 </script>
+
+<script src="./viewPagePost.js"></script>
 </html>
