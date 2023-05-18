@@ -11,7 +11,6 @@ let eachPost = document.getElementById ('eachPost')
 
 function lookForPost() {
 
-    document.addEventListener('DOMContentLoaded', () => {
 
 searchBar.addEventListener('keyup', e => {
     eachPost.forEach(post => {
@@ -25,5 +24,5 @@ searchBar.addEventListener('keyup', e => {
         }
     });
 });
-}); 
+ 
 }
