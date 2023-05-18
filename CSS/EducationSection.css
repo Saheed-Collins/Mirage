@@ -21,6 +21,11 @@ body {
   text-align: center;
   align-items: center;
 }
+@media (max-width: 260px) {
+  .heroHead .topic, .heroHead p {
+    font-size: 12px;
+  }
+}
 .heroHead img {
   position: absolute;
   top: 0;
