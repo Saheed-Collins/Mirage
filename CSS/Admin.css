@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500&display=swap");
+* {
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.Hero {
+  background-color: black;
+}
+.Hero .rightPanel {
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+}
+.Hero .rightPanel .profileImage {
+  width: 50%;
+  height: 50%;
+  border-radius: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.Hero .rightPanel .profileImage img {
+  width: 100%;
+}
+.Hero .rightPanel h6, .Hero .rightPanel p {
+  color: white;
+}
+.Hero .leftPanel {
+  background: rgb(218, 168, 168);
+  height: 100%;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+}
