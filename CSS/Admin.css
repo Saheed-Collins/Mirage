@@ -7,6 +7,9 @@
   background-color: black;
 }
 .Hero .rightPanel {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   background-color: rgb(0, 0, 0);
 }
@@ -23,6 +26,22 @@
 }
 .Hero .rightPanel h6, .Hero .rightPanel p {
   color: white;
+}
+.Hero .rightPanel .bottonss {
+  background-color: rgb(25, 25, 25);
+  text-align: left;
+}
+.Hero .rightPanel .bottonss a {
+  text-decoration: none;
+}
+.Hero .rightPanel .bottonss .liveOption {
+  background-color: #ee4400;
+}
+.Hero .rightPanel .bottonss .opt:hover {
+  background-color: #ff9e77;
+}
+.Hero .rightPanel .homepageLink h6 {
+  font-size: 15px;
 }
 .Hero .leftPanel {
   background: rgb(218, 168, 168);
