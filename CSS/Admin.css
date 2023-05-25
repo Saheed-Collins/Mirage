@@ -41,11 +41,60 @@
   background-color: #ff9e77;
 }
 .Hero .rightPanel .homepageLink h6 {
-  font-size: 15px;
+  font-size: 12px;
+}
+.Hero .rightPanel .homepageLink h6:hover {
+  color: #ee4400;
+}
+.Hero .rightPanel .homepageLink a {
+  text-decoration: none;
+}
+.Hero .rightPanel .homepageLink a:hover {
+  color: #ee4400;
 }
 .Hero .leftPanel {
-  background: rgb(218, 168, 168);
+  background: rgb(255, 255, 255);
   height: 100%;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
+}
+.Hero .leftPanel .forBlogPost {
+  color: rgb(58, 58, 58);
+}
+.Hero .leftPanel .forBlogPost a {
+  color: white;
+  text-decoration: none;
+}
+.Hero .leftPanel .forBlogPost .Hoverbtn {
+  border: none;
+  background-color: #ee4400;
+}
+.Hero .leftPanel .forBlogPost .Hoverbtn:hover {
+  background-color: rgb(75, 0, 0);
+  transition: 0.5s ease-in;
+}
+.Hero .leftPanel .forBlogPost .postLists {
+  border: 0.5px solid rgb(215, 215, 215);
+  border-radius: 20px;
+  background-color: rgb(246, 246, 246);
+  height: 60%;
+}
+.Hero .leftPanel .forBlogPost .postLists table {
+  font-size: 15px;
+  align-items: center;
+}
+.Hero .leftPanel .forBlogPost .postLists table .headeeer {
+  background-color: black;
+  color: white;
+}
+.Hero .leftPanel .forBlogPost .postLists table .spaceForTopic {
+  width: 30%;
+}
+.Hero .leftPanel .forBlogPost .postLists table .butomBord {
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.5px solid rgb(215, 215, 215);
+}
+.Hero .leftPanel .forBlogPost .postLists table img {
+  height: 40px;
 }

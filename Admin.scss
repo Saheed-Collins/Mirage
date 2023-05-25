@@ -42,18 +42,69 @@
          }
         }
         .homepageLink{
-            background-color: yellow;
+            // background-color: yellow; 
             h6 {
-font-size: 10px;
+                font-size: 12px;&:hover {
+                color: #ee4400;
+            }
+            }
+            a {
+                text-decoration: none; 
+                }a:hover{
+                    color: #ee4400;
             }
             
         }
         
     }
     .leftPanel {
-        background: rgb(218, 168, 168);
+        background: rgb(255, 255, 255);
         height: 100%;
         border-bottom-left-radius: 50px;
         border-top-left-radius: 50px;
+
+.forBlogPost{
+            color: rgb(58, 58, 58);
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    .Hoverbtn {
+        border: none;
+        background-color: #ee4400;&:hover{
+        background-color: rgb(75, 0, 0);
+        transition: 0.5s ease-in; }
+    }
+
+    .postLists {
+        border: 0.5px solid rgb(215, 215, 215);
+        border-radius: 20px;
+        background-color: rgb(246, 246, 246);
+        // height: 100%;
+        
+        height: 60%;
+
+        table{
+font-size: 15px;
+align-items: center;
+            .headeeer{
+                background-color: black;
+                color: white;
+                
+            }
+            .spaceForTopic{
+                width: 30%;
+            }
+            .butomBord{
+                align-items: center;
+                justify-content: center;
+                border-bottom: 0.5px solid rgb(215, 215, 215); ;
+            }
+            img {
+                height: 40px;
+            }
+        }
+    }
+}
     }
 }
