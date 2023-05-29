@@ -12,7 +12,7 @@ let arrWords=0;
 
 function autotype() {
     letterword=sentence[arrsentence][arrWords]
-    sectionNew.innerHTML+= letterword  
+    sectionNew.innerHTML += letterword  
     arrWords++
     setTimeout (function(){
         if (sentence[arrsentence][arrWords]) {

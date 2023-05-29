@@ -60,11 +60,15 @@
     .leftPanel {
         background: rgb(255, 255, 255);
         height: 100%;
+        // height: 100vh;
         border-bottom-left-radius: 50px;
         border-top-left-radius: 50px;
-
-.forBlogPost{
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+        
+.postlists{
             color: rgb(58, 58, 58);
+            // display: none;
         a{
             color: white;
             text-decoration: none;
@@ -79,14 +83,14 @@
     .postLists {
         border: 0.5px solid rgb(215, 215, 215);
         border-radius: 20px;
-        background-color: rgb(246, 246, 246);
-        // height: 100%;
-        
-        height: 60%;
+        background-color: rgb(246, 246, 246);        
+        max-height: 100%;
+      
 
         table{
-font-size: 15px;
-align-items: center;
+            overflow-y: scroll;
+            font-size: 15px;
+            align-items: center;
             .headeeer{
                 background-color: black;
                 color: white;
@@ -98,7 +102,11 @@ align-items: center;
             .butomBord{
                 align-items: center;
                 justify-content: center;
-                border-bottom: 0.5px solid rgb(215, 215, 215); ;
+                border-bottom: 0.5px solid rgb(215, 215, 215); 
+                cursor: pointer;
+                &:hover{
+                    color: #ee4400;
+                }
             }
             img {
                 height: 40px;
@@ -108,3 +116,12 @@ align-items: center;
 }
     }
 }
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 400px;
+    overflow: auto;
+    }
+    .table-wrapper-scroll-y {
+    display: block;
+    }
