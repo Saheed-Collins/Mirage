@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500&display=swap");
+* {
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  transition: 2s ease-in-out;
+}
+
+.heroPage {
+  background: rgb(0, 0, 0);
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.heroPage .Heeero {
+  margin-top: 3%;
+  margin-left: 10%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.heroPage .Heeero .HeroTextLeft {
+  justify-content: center;
+  text-align: left;
+  color: white;
+}
+.heroPage .Heeero .HeroTextLeft h1, .heroPage .Heeero .HeroTextLeft h3 {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 80px;
+}
+@media (max-width: 964px) {
+  .heroPage .Heeero .HeroTextLeft h1, .heroPage .Heeero .HeroTextLeft h3 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 592px) {
+  .heroPage .Heeero .HeroTextLeft h1, .heroPage .Heeero .HeroTextLeft h3 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
+.heroPage .Heeero .HeroTextLeft h1 span, .heroPage .Heeero .HeroTextLeft h3 span {
+  color: rgb(255, 70, 0);
+}
+.heroPage .Heeero .HeroTextLeft .welcome {
+  font-size: 24px;
+  color: rgb(178, 178, 178);
+}
+.heroPage .Heeero .HeroTextLeft .conteNT {
+  color: rgb(158, 158, 158);
+}
+.heroPage .Heeero .HeroTextLeft .Hoverbtn {
+  color: white;
+  border: none;
+  transition: 1s ease-in-out;
+  background: transparent;
+}
+.heroPage .Heeero .HeroTextLeft .Hoverbtn:hover {
+  transition: 0.5s ease-in-out;
+  background: #ee4400;
+  border: 1px solid white;
+}
+.heroPage .Heeero .HeroTextLeft h2 span {
+  color: rgb(255, 70, 0);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.heroPage .Heeero .HeroTextRight {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.heroPage .Heeero .HeroTextRight img {
+  width: 100%;
+}
+.heroPage .Explore {
+  width: 40%;
+  text-align: center;
+  display: flex;
+  perspective: 5px;
+  transform: perspective(100px) rotateX(20deg);
+  will-change: perspective;
+  perspective-origin: center center;
+  transition: all 1.3s ease-out;
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+.heroPage .Explore:hover {
+  perspective: 1000px;
+  transition: all 1.3s ease-in;
+  transform: perspective(10000px) rotateX(0deg);
+}
+.heroPage .Explore:hover .text {
+  opacity: 1;
+  color: rgb(188, 64, 64);
+  text-align: center;
+}
+.heroPage .Explore:hover > div {
+  opacity: 1;
+  transition-delay: 0s;
+}
+.heroPage .Explore:hover .explainer {
+  opacity: 0;
+}
+.heroPage .left, .heroPage .center, .heroPage .right, .heroPage .leftEdge, .heroPage .rightEdge {
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all 0.3s ease;
+  transition-delay: 1s;
+  position: relative;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgb(40, 40, 40);
+  cursor: pointer;
+  background-blend-mode: color-burn;
+}
+.heroPage .left:hover, .heroPage .center:hover, .heroPage .right:hover, .heroPage .leftEdge:hover, .heroPage .rightEdge:hover {
+  box-shadow: 0 0 30px 5px rgba(255, 203, 183, 0.4);
+  background-color: rgb(237, 237, 255);
+}
+.heroPage .text {
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 0.3s ease;
+  bottom: 0;
+  left: 20px;
+  text-align: center;
+  position: absolute;
+  will-change: transform;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(255, 150, 58, 0.6);
+}
+.heroPage .leftEdge {
+  transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
+  text-align: center;
+}
+.heroPage .leftEdge img {
+  width: 50%;
+  margin-top: 30%;
+}
+.heroPage .left {
+  transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
+  align-items: center;
+}
+.heroPage .left img {
+  width: 25%;
+  margin-top: 30%;
+}
+.heroPage .center {
+  opacity: 1;
+  text-align: center;
+}
+.heroPage .center img {
+  width: 50%;
+  margin-top: 32%;
+}
+.heroPage .right {
+  transform: translateX(30px) translateZ(-25px) rotateY(5deg);
+  text-align: center;
+}
+.heroPage .right img {
+  width: 40%;
+  margin-top: 30%;
+}
+.heroPage .rightEdge {
+  transform: translateX(60px) translateZ(-50px) rotateY(10deg);
+  text-align: center;
+}
+.heroPage .rightEdge img {
+  width: 40%;
+  margin-top: 30%;
+}
+.heroPage .explainer {
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff;
+  transition: all 0.6s ease;
+  width: 100%;
+  height: 100%;
+  background-color: #303050;
+  background-image: radial-gradient(rgb(249, 91, 0), rgb(255, 70, 0));
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 40px;
+  background-color: black;
+}
+
+.PostSections {
+  display: none;
+  background: rgb(233, 233, 233);
+  height: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+.PostSections .Heeero {
+  margin-left: 10%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.PostSections .Heeero .HeroTextLeft {
+  justify-content: center;
+  text-align: left;
+  color: white;
+}
+.PostSections .Heeero .HeroTextLeft h1, .PostSections .Heeero .HeroTextLeft h3 {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 80px;
+}
+@media (max-width: 964px) {
+  .PostSections .Heeero .HeroTextLeft h1, .PostSections .Heeero .HeroTextLeft h3 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 592px) {
+  .PostSections .Heeero .HeroTextLeft h1, .PostSections .Heeero .HeroTextLeft h3 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
+.PostSections .Heeero .HeroTextLeft h1 span, .PostSections .Heeero .HeroTextLeft h3 span {
+  color: rgb(255, 70, 0);
+}
+.PostSections .Heeero .HeroTextLeft .welcome {
+  font-size: 24px;
+  color: rgb(255, 70, 0);
+}
+.PostSections .Heeero .HeroTextLeft .conteNT {
+  color: rgb(96, 96, 96);
+}
+.PostSections .Heeero .HeroTextLeft .Hoverbtn {
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 70, 0);
+  transition: 1s ease-in-out;
+  background: transparent;
+}
+.PostSections .Heeero .HeroTextLeft .Hoverbtn:hover {
+  color: white;
+  transition: 0.5s ease-in-out;
+  background: #ee4400;
+  border: 1px solid white;
+}
+.PostSections .Heeero .HeroTextLeft h2 span {
+  color: rgb(255, 70, 0);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.PostSections .Heeero .HeroTextRight {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.PostSections .Heeero .HeroTextRight img {
+  width: 100%;
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+}
+.PostSections .Heeero .HeroTextRight img:hover {
+  transform: scale(1.1);
+  border-radius: 20px;
+}
+
+.PoliticsSec {
+  display: none;
+  opacity: 1;
+  transition: opacity 1s ease-in;
+  background: rgb(210, 210, 210);
+  height: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.HealthSec {
+  display: none;
+  opacity: 1;
+  transition: opacity 1s ease-in;
+  background: #EFEBEC;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.scienceSec {
+  display: none;
+  opacity: 1;
+  transition: opacity 1s ease-in;
+  background: #F0F0F2;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.nextButton {
+  background-color: #ee4400;
+  color: white;
+  border: none;
+}
+
+.nextButton:hover {
+  background-color: black;
+  color: white;
+  transition: 0.25s ease-in-out;
+  letter-spacing: 10px;
+}
+
+.upButton {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  width: 35px;
+  background-color: rgb(255, 70, 0);
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 100px;
+  font-size: 18px;
+}
+
+.upButton:hover {
+  background-color: #000000;
+}
+
+.whatsAppChat {
+  display: block;
+  position: fixed;
+  bottom: 70px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  width: 35px;
+  background-color: rgb(20, 199, 0);
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 100px;
+  font-size: 18px;
+}
+
+.whatsAppChat:hover {
+  background-color: #086600;
+}
+
+.whatsA {
+  display: none;
+  position: fixed;
+  bottom: 70px;
+  right: 80px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  width: 180px;
+  background-color: rgb(20, 199, 0);
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 15px;
+}
+.whatsA a {
+  text-decoration: none;
+  color: white;
+}
+
+.whatsA:hover {
+  background-color: black;
+}
+
+.mainPage {
+  background-color: rgb(240, 240, 240);
+  height: 100vh;
+  width: 98%;
+}
+.mainPage .right {
+  background-color: #303050;
+  height: 100vh;
+}
+
+.copyWr {
+  color: white;
+  font-size: 10px;
+  font-weight: 300;
+  word-spacing: 2px;
+}

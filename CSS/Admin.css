@@ -3,6 +3,10 @@
   font-family: "Wix Madefor Display", sans-serif;
 }
 
+html {
+  background-color: black;
+}
+
 .saheed {
   text-align: right;
 }
@@ -15,15 +19,12 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color: rgb(0, 0, 0);
 }
 .Hero .rightPanel .profileImage {
   width: 50%;
   height: 50%;
   border-radius: 100%;
   align-items: center;
-  display: flex;
-  justify-content: center;
 }
 .Hero .rightPanel .profileImage img {
   width: 100%;
@@ -38,11 +39,14 @@
 .Hero .rightPanel .bottonss a {
   text-decoration: none;
 }
-.Hero .rightPanel .bottonss .liveOption {
+.Hero .rightPanel .bottonss .menuOpt {
+  cursor: pointer;
+}
+.Hero .rightPanel .bottonss .menuOpt:focus-within {
   background-color: #ee4400;
 }
-.Hero .rightPanel .bottonss .opt:hover {
-  background-color: #ff9e77;
+.Hero .rightPanel .bottonss .menuOpt:hover {
+  background-color: #575757;
 }
 .Hero .rightPanel .homepageLink h6 {
   font-size: 12px;
@@ -56,7 +60,26 @@
 .Hero .rightPanel .homepageLink a:hover {
   color: #ee4400;
 }
-.Hero .publishedPost {
+.Hero #display_post {
+  background-image: url(https://images.unsplash.com/photo-1628072004495-19b19c64dee1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.Hero #display_post .textHea {
+  font-size: 80px;
+  line-height: 80px;
+  color: white;
+}
+.Hero #display_post .textHea2 {
+  text-align: right;
+  font-size: 15px;
+  line-height: 30px;
+  color: white;
+}
+.Hero #display_post .textHea2 span {
+  color: #ee4400;
+}
+.Hero .leftSect1 {
   background: rgb(255, 255, 255);
   height: 100%;
   border-bottom-left-radius: 50px;
@@ -64,54 +87,55 @@
   border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;
 }
-.Hero .publishedPost .postlists {
+.Hero .leftSect1 .leftSectContent {
   color: rgb(58, 58, 58);
 }
-.Hero .publishedPost .postlists a {
+.Hero .leftSect1 .leftSectContent a {
   color: white;
   text-decoration: none;
 }
-.Hero .publishedPost .postlists .Hoverbtn {
+.Hero .leftSect1 .leftSectContent .Hoverbtn {
   border: none;
   background-color: #ee4400;
 }
-.Hero .publishedPost .postlists .Hoverbtn:hover {
+.Hero .leftSect1 .leftSectContent .Hoverbtn:hover {
   background-color: rgb(75, 0, 0);
   transition: 0.5s ease-in;
 }
-.Hero .publishedPost .postlists .postLists {
+.Hero .leftSect1 .leftSectContent .tableWrappe {
   border: 0.5px solid rgb(215, 215, 215);
   border-radius: 20px;
   background-color: rgb(246, 246, 246);
   max-height: 100%;
 }
-.Hero .publishedPost .postlists .postLists table {
+.Hero .leftSect1 .leftSectContent .tableWrappe table {
   overflow-y: scroll;
   font-size: 15px;
   align-items: center;
 }
-.Hero .publishedPost .postlists .postLists table .headeeer {
+.Hero .leftSect1 .leftSectContent .tableWrappe table .headeeer {
   background-color: black;
   color: white;
 }
-.Hero .publishedPost .postlists .postLists table .spaceForTopic {
+.Hero .leftSect1 .leftSectContent .tableWrappe table .spaceForTopic {
   width: 30%;
 }
-.Hero .publishedPost .postlists .postLists table .butomBord {
+.Hero .leftSect1 .leftSectContent .tableWrappe table .butomBord {
   align-items: center;
   justify-content: center;
   border-bottom: 0.5px solid rgb(215, 215, 215);
   cursor: pointer;
 }
-.Hero .publishedPost .postlists .postLists table .butomBord:hover {
+.Hero .leftSect1 .leftSectContent .tableWrappe table .butomBord:hover {
   color: #ee4400;
 }
-.Hero .publishedPost .postlists .postLists table img {
+.Hero .leftSect1 .leftSectContent .tableWrappe table img {
   height: 40px;
 }
 .Hero .pagePost_toPush {
   background: rgb(255, 255, 255);
   height: 100%;
+  width: 100%;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -156,7 +180,7 @@
   color: white;
 }
 .Hero .pagePost_toPush .Hoverbtn:hover {
-  background-color: black;
+  background-color: rgb(105, 26, 0);
 }
 
 .my-custom-scrollbar {

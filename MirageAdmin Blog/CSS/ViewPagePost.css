@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500&display=swap");
+* {
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+body {
+  background-color: rgb(143, 130, 130);
+}
+
+.heroHead {
+  margin: 0 auto;
+  justify-content: center;
+}
+.heroHead .boxHeader {
+  background-color: black;
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.mainSection {
+  margin: 0 auto;
+  justify-content: center;
+  width: 40%;
+}
+.mainSection .smallHeading {
+  font-size: 12px;
+  color: #ee4400;
+  font-weight: 700;
+}
+.mainSection .eachPost {
+  margin-bottom: 30px;
+}
+.mainSection .box {
+  height: 20%;
+  background-color: transparent;
+}
+.mainSection .box img {
+  height: 70%;
+  width: 100%;
+}
+.mainSection h3 {
+  font-weight: 700;
+  font-size: 50px;
+  color: black;
+}
+.mainSection p {
+  color: #464646;
+  font-size: 22px;
+}
+.mainSection a {
+  text-decoration: none;
+  color: #767676;
+}
+.mainSection a:hover {
+  color: white;
+}
+.mainSection .postBody {
+  font-size: 20px;
+  text-align: justify;
+}
+.mainSection .postBody a {
+  color: #ee4400;
+}
+.mainSection .postBody a:hover {
+  color: #c0c0c0;
+}
+.mainSection .postBody span {
+  color: #ee4400;
+  font-weight: 600;
+}
+
+.nextANDPrevios {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.Hoverbtn {
+  color: rgb(139, 139, 139);
+  border: 1px solid gray;
+  transition: 0.3s ease-in-out;
+  background: transparent;
+  background-color: #e4e4e4;
+}
+
+.Hoverbtn:hover {
+  transition: 0.3s ease-in-out;
+  background: #ee4400;
+  border: 1px solid white;
+  color: white;
+}

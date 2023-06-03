@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500&display=swap');
+*{
+    font-family: 'Wix Madefor Display', sans-serif;  
+}
+
+.Hero {
+    
+    background-image: url(https://designshack.net/wp-content/uploads/Slate-Texture-BW-Background.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+//     filter: blur(2px);
+//   -webkit-filter: blur(2px);
+
+
+    .rightPanel {
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        // background-color: rgb(0, 0, 0);
+
+        .profileImage{
+            width: 30%;
+            height: 30%;
+            border-radius: 100%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+            img{
+                width: 100%;
+            }
+        }
+        h6, p {
+            color: white;
+        }
+
+        .bottonss {
+            background-color: rgba($color: #000000, $alpha: 0.2);
+            width: 50px;
+           text-align: left; 
+           a {
+                text-decoration: none;
+            } 
+         .liveOption {
+            .icon{
+                background-color: #ee4400;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border: none;
+                height: 100%;
+            }
+            input {
+                background-color: transparent;
+                border: 0.5px solid gray;
+                width: 100%;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                font-size: 15px;
+                &::placeholder{
+                    font-size: 12px;
+                }&:focus{
+                    outline: none;
+                    background-color: rgb(255, 240, 230);
+                }
+            }
+
+            font-size: 18px;
+            color: white;
+         }  
+        }
+        
+        .homepageLink{
+            // background-color: yellow; 
+            h6 {
+                font-size: 12px;&:hover {
+                color: #ee4400;
+            }
+            }
+            a {
+                text-decoration: none; 
+                }a:hover{
+                    color: #ee4400;
+            }
+
+            img{
+                width: 50%;
+            }
+            
+        }
+        
+        // loginpage
+        .loginPanel {
+            width: 100% !important;
+        }
+        .login{
+            background-color: #ee4400;
+            border: none;
+            a{
+                color: white;
+            }&:hover {
+                background-color: #000000;
+                border: 0.5px solid #ee4400 ;
+                border-radius: 5px;
+            }
+        }
+    }
+
+   
+}

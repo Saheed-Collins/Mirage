@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500&display=swap");
+* {
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.Hero {
+  background-image: url(https://designshack.net/wp-content/uploads/Slate-Texture-BW-Background.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+.Hero .rightPanel {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.Hero .rightPanel .profileImage {
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.Hero .rightPanel .profileImage img {
+  width: 100%;
+}
+.Hero .rightPanel h6, .Hero .rightPanel p {
+  color: white;
+}
+.Hero .rightPanel .bottonss {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 50px;
+  text-align: left;
+}
+.Hero .rightPanel .bottonss a {
+  text-decoration: none;
+}
+.Hero .rightPanel .bottonss .liveOption {
+  font-size: 18px;
+  color: white;
+}
+.Hero .rightPanel .bottonss .liveOption .icon {
+  background-color: #ee4400;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  height: 100%;
+}
+.Hero .rightPanel .bottonss .liveOption input {
+  background-color: transparent;
+  border: 0.5px solid gray;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 15px;
+}
+.Hero .rightPanel .bottonss .liveOption input::-moz-placeholder {
+  font-size: 12px;
+}
+.Hero .rightPanel .bottonss .liveOption input::placeholder {
+  font-size: 12px;
+}
+.Hero .rightPanel .bottonss .liveOption input:focus {
+  outline: none;
+  background-color: rgb(255, 240, 230);
+}
+.Hero .rightPanel .homepageLink h6 {
+  font-size: 12px;
+}
+.Hero .rightPanel .homepageLink h6:hover {
+  color: #ee4400;
+}
+.Hero .rightPanel .homepageLink a {
+  text-decoration: none;
+}
+.Hero .rightPanel .homepageLink a:hover {
+  color: #ee4400;
+}
+.Hero .rightPanel .homepageLink img {
+  width: 50%;
+}
+.Hero .rightPanel .loginPanel {
+  width: 100% !important;
+}
+.Hero .rightPanel .login {
+  background-color: #ee4400;
+  border: none;
+}
+.Hero .rightPanel .login a {
+  color: white;
+}
+.Hero .rightPanel .login:hover {
+  background-color: #000000;
+  border: 0.5px solid #ee4400;
+  border-radius: 5px;
+}

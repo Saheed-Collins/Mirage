@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500&display=swap');
+*{
+    font-family: 'Wix Madefor Display', sans-serif;  
+}
+html {
+    background-color: black;
+}
+
+.saheed{
+    text-align: right;
+}
+.Hero {
+    background-color:black;
+
+    .rightPanel {
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        // height: 100%;
+        height: 100%;
+        // background-color: rgb(0, 0, 0);
+
+        .profileImage{
+            width: 50%;
+            height: 50%;
+            border-radius: 100%;
+            align-items: center;
+
+            img{
+                width: 100%;
+            }
+        }
+        h6, p {
+            color: white;
+        }
+        .bottonss {
+            background-color: rgb(25, 25, 25);
+           text-align: left; 
+           a {
+                text-decoration: none;
+            } 
+         .menuOpt {
+            cursor: pointer;
+            &:focus-within{
+            background-color: #ee4400;
+            }
+         }   
+         .menuOpt:hover {
+            background-color: #575757;
+         }
+        }
+        .homepageLink{
+            // background-color: yellow; 
+            h6 {
+                font-size: 12px;&:hover {
+                color: #ee4400;
+            }
+            }
+            a {
+                text-decoration: none; 
+                }a:hover{
+                    color: #ee4400;
+            }   
+        }
+    }
+
+    // left panel
+#display_post {
+    background-image: url(https://images.unsplash.com/photo-1628072004495-19b19c64dee1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-size: auto;
+    
+    
+    .textHea {
+        font-size: 80px;
+        line-height: 80px;
+        color: white;
+    }
+    .textHea2 {
+        text-align: right;
+        font-size: 15px;
+        line-height: 30px;
+        color: white;
+        span {
+            color: #ee4400;
+        }
+    }
+}
+
+.leftSect1 {
+        // display: none;
+        background: rgb(255, 255, 255);
+        height: 100%;
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+        
+.leftSectContent{
+            color: rgb(58, 58, 58);
+            // display: none;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    .Hoverbtn {
+        border: none;
+        background-color: #ee4400;&:hover{
+        background-color: rgb(75, 0, 0);
+        transition: 0.5s ease-in; }
+    }
+
+    .tableWrappe {
+        border: 0.5px solid rgb(215, 215, 215);
+        border-radius: 20px;
+        background-color: rgb(246, 246, 246);        
+        max-height: 100%;
+      
+
+        table{
+            overflow-y: scroll;
+            font-size: 15px;
+            align-items: center;
+            .headeeer{
+                background-color: black;
+                color: white;
+                
+            }
+            .spaceForTopic{
+                width: 30%;
+            }
+            .butomBord{
+                align-items: center;
+                justify-content: center;
+                border-bottom: 0.5px solid rgb(215, 215, 215); 
+                cursor: pointer;
+                &:hover{
+                    color: #ee4400;
+                }
+            }
+            img {
+                height: 40px;
+            }
+        }
+    }
+}
+    }
+
+    .pagePost_toPush {
+        // display: none ;
+        background: rgb(255, 255, 255);
+        height: 100%;
+        width: 100%;
+        // height: 100vh;
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+
+    h6 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    input, textarea {
+        box-shadow: #ee4400;
+        border: 0.5px solid rgb(203, 203, 203);
+        padding: 10px;
+        background-color: rgb(247, 247, 247);
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+    &:focus{
+        outline: none;
+        background-color: white;
+    }
+    }
+   #tagline, #topic {
+        width: 100%;  
+        height: 70px;
+    }
+    #intro{
+        width: 100%;
+        // height: 50px;
+    }
+    #body {
+        width: 100%;
+        height: 150px;
+    }
+    .Hoverbtn {
+        background-color: #ee4400;
+        color: white;
+        border: none;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        &:hover{
+            background-color: rgb(105, 26, 0);
+        }
+    }
+    }
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 400px;
+    overflow: auto;
+    }
+    .table-wrapper-scroll-y {
+    display: block;
+    }

@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500;600&display=swap");
+* {
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.navBar {
+  margin: 0 auto;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+.navBar .navAlign {
+  justify-content: center;
+  align-items: center;
+}
+.navBar .navAlign .todayDate {
+  font-weight: 500;
+  font-size: 12px;
+  color: rgb(113, 113, 113);
+}
+.navBar .navAlign .image img {
+  max-width: 100%;
+}
+.navBar .navAlign input {
+  background-color: #ffe9e1;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.navBar .navAlign :focus {
+  outline: none;
+  border: 1px solid #FF4600;
+  border-right: none;
+}
+.navBar .navAlign input::-moz-placeholder {
+  padding: 10px;
+}
+.navBar .navAlign input::placeholder {
+  padding: 10px;
+}
+.navBar .navAlign .search {
+  width: 40px;
+  color: #FF4600;
+  background-color: #ffe9e1;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.nav2 {
+  margin: 0 auto;
+  justify-content: center;
+  background-color: #ebebeb;
+  text-align: center;
+}
+.nav2 .menu a {
+  color: black;
+  text-decoration: none;
+}
+.nav2 .menu :hover {
+  color: #FF4600;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./CSS/nav.css"> -->
+    <link rel="stylesheet" href="./CSS/Admin.css">
+    <!-- <link rel="stylesheet" href="./CSS/ViewPagePost.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+    <!-- Nav Bar -->
+    
+    <nav class="navBar container-fluid bg-black" id="navBar">
+
+        <div class="row navAlign ">
+            
+           <div class="col-6 col-md-8 todayDate fw-bold" id="todayDate">  </div> 
+
+            <div class="saheed col-3 col-md-3 col-lg-3 p-3 text-white">
+                Welcome, Saheed!
+            </div>
+            
+        </div>
+    </nav>
+
+    <!-- Nav Bar end -->
+
+
+<!-- HEROPAGE -->
+<section class="container-fluid Hero"> 
+            <div class=" row">
+
+
+<!-- right section -->
+   <div class="rightPanel d-none d-sm-block col-md-2 col-lg-2 mt-5 ">
+                   <center> <div class="profileImage"><img src="./Assets/Saheed.png" alt=""></div></center>
+
+                   <center><div>
+                    <h6>Saheed C.</h6>
+                  <p>writer</p>
+                  </div></center>
+                 <br><br><br>
+
+                  <div class="bottonss rounded p-2 py-3">
+
+                    <div onclick="leftsection()" id="menuOpt" class="liveOption p-2 menuOpt m-2 rounded py-2">
+                      <h6><i class="bi bi-person-circle px-2"></i> Published Posts</h6>
+                    </div>
+
+                    <div onclick="addBlog_Post()" id="menuOpt2"  class=" p-2 menuOpt m-2 rounded py-2"><h6><i class="bi bi-stickies-fill px-2"></i>New Posts</h6></div>
+
+                    <div onclick="readersPost()" id="menuOpt3" class=" p-2 menuOpt m-2 rounded py-2"><h6> <i class="bi bi-bookmark-heart-fill px-2"></i> Readers</h6></div>
+                    
+                   <div id="menuOpt4" class=" p-2 menuOpt m-2 rounded py-2"><h6><i class="bi bi-gear-fill px-2"></i>Settings</h6></div>
+
+                  </div> <br> <br>
+
+                  <div class="homepageLink p-4  rounded py-3">
+                    <a href="../index.html"><h6> <i class="bi bi-house-fill px-2"></i> Homepage</h6></a>
+                  </div>
+                  
+                  <br>
+             </div>
+
+
+<!-- left section  -->
+<div id="display_post" class="col-12 col-md-9 col-lg-10">
+
+  <div class="textHea p-5 ms-5">
+    What do you <br> want to post <br> today?
+  </div> 
+  <br> <br> <br>
+  <div class="textHea2 p-5 ms-5">
+    Psychology - a <span> perception</span>, as of visual stimuli<br> (optical illusion ), that represents what is perceived <br> in a way different from the way it is in reality, <br>it's <span>mirage</span>.
+  </div>
+
+
+</div>
+  
+   
+
+    
+
+    <!-- add new posts -->
+    
+
+    </div>
+
+
+
+</section>
+<!-- HEROPAGE END -->
+
+<script src="./Admin.js"></script>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDAU7DdYzm6gNr9ON5WtGO1iA9mSX1CSpg",
+    authDomain: "mirage-blog-6a752.firebaseapp.com",
+    projectId: "mirage-blog-6a752",
+    storageBucket: "mirage-blog-6a752.appspot.com",
+    messagingSenderId: "11636894697",
+    appId: "1:11636894697:web:274fb22dced7139e513978"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<!-- <script src="./mirage.js"></script> -->
+
+</html>
