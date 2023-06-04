@@ -122,7 +122,7 @@ function addBlog_Post() {
   menuOpt2.style.backgroundColor = "#ee4400";
   menuOpt3.style.backgroundColor = "";
   menuOpt4.style.backgroundColor = "";
-  menuOpt.style.backgroundColor = "";
+  menuOpt.style.backgroundColor = ""; 
 
   displayPost.innerHTML =
   `

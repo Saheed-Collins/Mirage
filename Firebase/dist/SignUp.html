@@ -7,20 +7,211 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../../CSS/signup.css">
+    <link rel="stylesheet" href="../../CSS/Admin.css">
 
 </head>
 <body>
 
-<section class="container-fluid Hero"> 
+
+<main id="displayPage" class="displayPage"></main>
+
+<!-- login pAGE -->
+ <section class="container-fluid Hero loginAdminUser" id="loginAdminUser"> 
+        <div class=" row d-flex justify-content-center">
+    
+    <!-- right section -->
+        <div class="rightPanel  col-md-4 col-lg-4 mt-5 ">
+           
+           <marquee behavior="" direction=""> <div id="userName"></div></marquee>
+      <center> <div class="profileImage"><img src="../../Assets/Saheed.png" alt=""></div></center>
+        <br>
+     <center><div><h6>Welcome, Saheed C.</h6></div></center>
+      <br>
+         <div class="bottonss rounded loginPanel p-4 py-4 gap-1">
+            <center> <p>ADMIN LOGIN</p></center>
+        
+            <form action="" id="login" >
+                <!-- email -->
+                <div class="liveOption p-2 py-2 d-flex">
+                    <label for="password"></label>
+    
+                    <div class="p-2 icon"><i class="bi bi-envelope-at-fill px-2 py-5"></i> </div>
+    
+                          <input type="email" for="email" name="email" placeholder=" Email" required class="p-1" id="emailAdd">
+                    <!-- <input type="email" name="email"> -->
+                </div>
+    
+                <!-- password -->
+                <div class="liveOption p-2 py-2 d-flex">
+    
+                    <label for="password"></label>
+    
+                    <div class="p-2 icon"><i class="bi bi-key-fill px-2 py-3"></i> </div>
+    
+                    <input type="password" name="password"  placeholder=" Password" required class="p-1" id="passwordAdd">
+    
+                    <!-- <input type="password" name="password"> -->
+                </div>
+    
+                <div id="errorLogin"  class="text-white"></div>
+          
+                
+                <center>  <button class="p-2 px-5 Hoverbtn login text-white" id="sub"  > Submit</button> </center>
+
+               
+                <br>
+                <center>  <div class="homepageLink p-4 rounded py-3">
+        
+                 <a href="./index.html">
+                 <img src="../../Assets/mirage logo22.svg" alt=""></a>
+        
+                          </div></center>
+            </form>
+            <button class="registerNewUser" onclick="registerNewUserr()" id="registerNewUserr" >Register</button>
+
+
+            <center><button id="logout">Logout</button></center>
+
+  </div> 
+                        
+        </div>
+    
+        </div>
+ </section>
+
+    
+    <!-- admin dashboard -->
+<section>
+     <!-- Nav Bar -->
+    
+     <marquee class="navBar container-fluid bg-black" id="navBar">
+
+        <div class="row navAlign px-4 text-white p-2 py-4">
+            
+            Welcome, Saheed!
+
+            <!-- <div class="saheed bg-info col-3 col-md-3 col-lg-8 p-3 text-white">
+                Welcome, Saheed!
+            </div> -->
+            
+        </div>
+    </marquee>
+
+    <!-- Nav Bar end -->
+
+
+<!-- DASHBOARD -->
+<section class="container-fluid HeroAdmin"> 
+            <div class=" row">
+
+
+<!-- right section -->
+   <div class="rightPanel d-none d-sm-block col-md-2 col-lg-2 mt-5 ">
+                   <center> <div class="profileImage"><img src="../../Assets/Saheed.png" alt=""></div></center>
+
+                   <center><div>
+                    <h6>Saheed C.</h6>
+                  <p>writer</p>
+                  </div></center>
+                 <br><br><br>
+
+                  <div class="bottonssAdmin rounded p-2 py-3">
+
+                    <div onclick="leftsection()" id="menuOpt" class="liveOption p-2 menuOpt m-2 rounded py-2">
+                      <h6><i class="bi bi-person-circle px-2"></i> Published Posts</h6>
+                    </div>
+
+                    <div onclick="addBlog_Post()" id="menuOpt2"  class=" p-2 menuOpt m-2 rounded py-2"><h6><i class="bi bi-stickies-fill px-2"></i>New Posts</h6></div>
+
+                    <div onclick="readersPost()" id="menuOpt3" class=" p-2 menuOpt m-2 rounded py-2"><h6> <i class="bi bi-bookmark-heart-fill px-2"></i> Readers</h6></div>
+                    
+                    <button onclick="logoutAdmin()"  id="logout" class=" p-2 logout menuOpt m-2 rounded border border-0 ms-4" >Logout</button>
+
+                   <!-- <div id="menuOpt4" class=" p-2 menuOpt m-2 rounded  py-2"><h6><i class="bi bi-gear-fill px-2"></i>Logout</h6></div> -->
+
+                  </div> <br> <br>
+
+                  <div class="homepageLink p-4 rounded py-3">
+                    <a href="../index.html"><h6> <i class="bi bi-house-fill px-2"></i> Homepage</h6></a>
+                  </div>
+                  
+                  <br>
+             </div>
+
+
+<!-- left section  -->
+<div id="display_post" class="col-12 col-md-9 col-lg-10">
+
+  <div class="textHea p-5 ms-5">
+    What do you <br> want to post <br> today?
+  </div> 
+  <br> <br> <br>
+  <div class="textHea2 p-5 ms-5">
+    Psychology - a <span> perception</span>, as of visual stimuli<br> (optical illusion ), that represents what is perceived <br> in a way different from the way it is in reality, <br>it's <span>mirage</span>.
+  </div>
+
+
+</div>
+  
+   
+
+    
+
+    <!-- add new posts -->
+    
+
+    </div>
+
+
+
+</section>
+<!-- DASHBOARD END -->
+
+</section>
+
+<!-- UPLOAD IMAGES -->
+    <!-- <h1>Upload images</h1>
+    
+    <form action="" class="blog">
+        <div>
+            <label for="">images</label>
+            <input type="file" name="image" accept="image/*" id="file-input">
+
+        </div>
+        <div>
+            <label for="title">title</label>
+            <input type="text" name="title">
+    
+        </div>
+    
+        <div>
+            <label for="description">description</label>
+            <input type="text" name="description">
+        </div>
+    
+        <button>Upload data</button>
+    </form>
+     -->
+
+<script>
+    let displayPage = document.getElementById('displayPage')
+        let registerUser = document.getElementById('registerUser')
+        let loginAdminUser = document.getElementById('loginAdminUser')
+    function registerNewUserr() {
+        // e.preventDefault()
+    
+        displayPage.innerHTML =
+        `
+        <section class="container-fluid Hero registerUser" id="registerUser"> 
     <div class=" row d-flex justify-content-center">
 
 <!-- right section -->
     <div class="rightPanel  col-md-4 col-lg-4 mt-5 ">
        
-       <marquee behavior="" direction=""> <div id="userName"></div></marquee>
-  <center> <div class="profileImage"><img src="../../Assets/Saheed.png" alt=""></div></center>
+       <marquee behavior="" direction=""> <div id="userName"></div></marquee> <br><br><br>
+  <!-- <center> <div class="profileImage"><img src="../../Assets/Saheed.png" alt=""></div></center>
     <br>
- <center><div><h6>Saheed C.</h6></div></center>
+ <center><div><h6>Saheed C.</h6></div></center> -->
   <br>
      <div class="bottonss rounded loginPanel p-4 py-4 gap-1">
         <center> <p>REGISTER</p></center>
@@ -73,7 +264,9 @@
 
             <div id="error" class="text-white"></div>
 
-            <center>  <button class="p-2 px-5 Hoverbtn login text-white" > Submit</button> </center>
+            <center>  <button class="p-2 px-5 Hoverbtn login text-white" > Submit</button> <br> 
+                <a href="" oncClick="backLogin()" class="p-2 px-5  text-white bg-none" > Login</a> 
+                </center>
 
             <br>
             <center>  <div class="homepageLink p-4 rounded py-3">
@@ -93,84 +286,19 @@
 
     </div>
 </section>
+        `
 
-    <!-- <div id="userName"></div> -->
+        loginAdminUser.innerHTML = ""
+        
+    }
 
-    <form action="" id="signUp">
-        <h1>Register</h1>
-        <div>
-            <label for="username">Name:</label>
-            <input type="text" name="username">
-        </div>
-        <div>
-            <label for="gender">gender:</label>
-            <select name="gender">
-                <option value="male">male</option>
-                <option value="female">female</option>
-            </select>
-        </div>
-        <div>
-            <label for="password">Email:</label>
-            <input type="email" name="email">
-        </div>
-        <div>
-            <label for="password">password:</label>
-            <input type="password" name="password">
-        </div>
-        <div id="error"></div>
-
-        <button>Submit</button>
-    </form>
-
-
-
-    <form action="" id="login">
-        <h1>Login</h1>
-        <div>
-            <label for="password">Email:</label>
-            <input type="email" name="email">
-        </div>
-        <div>
-            <label for="password">password:</label>
-            <input type="password" name="password">
-        </div>
-        <div id="errorLogin"></div>
-
-        <button>Submit</button>
-    </form>
-    
-    <button id="logout">Logout</button>
-
-
-
-
-    
-
-    <h1>Upload images</h1>
-    
-    <form action="" class="blog">
-        <div>
-            <label for="">images</label>
-            <input type="file" name="image" accept="image/*" id="file-input">
-
-        </div>
-        <div>
-            <label for="title">title</label>
-            <input type="text" name="title">
-    
-        </div>
-    
-        <div>
-            <label for="description">description</label>
-            <input type="text" name="description">
-        </div>
-    
-        <button>Upload data</button>
-    </form>
-    
-
+    function backLogin() {
+        loginAdminUser.innerHTML = "block"
+    }
+</script>
 
     <script src="bundle.js"></script>
+    <script src="../../MirageAdmin Blog/Admin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
