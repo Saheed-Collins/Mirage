@@ -180,10 +180,19 @@ function readersPost() {
   menuOpt4.style.backgroundColor = "";
   menuOpt.style.backgroundColor = "";
 
-  displayPost.innerHTML = ""
+  // let wholePage =  displayPost.innerHTML ;
+
+  // wholePage.stlye.display = "none";
 }
 
+let displayDashBud = document.getElementById("displayDashBud")
+let dashBud = document.getElementById("dashBud").innerHTML
 
+function logOutAdmin() {
+dashBud.style.dislpay = "none"
+
+  
+}
 
 
 // function leftsection() {
