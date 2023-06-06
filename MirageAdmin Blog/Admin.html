@@ -100,17 +100,16 @@
         <hr>
         
   <div class=" p-1">
-  
+  <!-- upload picture -->
     <div class="row">
-      <br>
-       
         <!-- upload picture -->
         <div class=""> 
           <h6 class="">Upload Picture</h6>
-         <input type="file" name="Chose Image" id="">
+         <input type="file" name="image" id="">
         </div>
     </div>
     <br>
+    
     <div class="row ">
       <!-- tagline -->
          <div class="col-12 col-md-3 col-lg-3"> 
@@ -134,7 +133,7 @@
         <!-- body -->
         <div class=""> 
           <h6 class="">Body</h6>
-          <textarea type="text" name="into" id="body" spellcheck="true"> </textarea>
+          <textarea type="text" name="intro" id="body" spellcheck="true"> </textarea>
         </div>
   
         <br>
@@ -145,8 +144,7 @@
       </div>
   
     </div>
-  
-    
+   
       <!-- <div>
           <label for="">Title</label>
           <input type="text" name="title">
@@ -164,7 +162,23 @@
 
       <!-- <button>Upload blog</button> -->
   </form>
-    
+  <!-- <form action="" class="formBlogData" >
+    <div>
+        <label for="">Title</label>
+        <input type="text" name="title">
+    </div>
+
+    <div>
+        <label for="blogDescrip">Description</label>
+        <input type="text" name="blogDescrip" >
+    </div>
+    <div>
+        <label for="author">Author</label>
+        <input type="text" name="author" >
+    </div>
+
+    <button>Upload blog</button>
+</form> -->
 
   
 
@@ -174,34 +188,17 @@
 <!-- HEROPAGE END -->
 </section>
 
+<script src="../Firebase/dist/bundle.js"></script>
+
 <script src="./Admin.js"></script>
-<script src="../firebase cdn/index.js"></script>
+<script src="../firebase cdn/index.js" type="module"></script>
 
-<!-- <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyDAU7DdYzm6gNr9ON5WtGO1iA9mSX1CSpg",
-    authDomain: "mirage-blog-6a752.firebaseapp.com",
-    projectId: "mirage-blog-6a752",
-    storageBucket: "mirage-blog-6a752.appspot.com",
-    messagingSenderId: "11636894697",
-    appId: "1:11636894697:web:274fb22dced7139e513978"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-</script> -->
 
 </body>
 
 
 
-<script src="../Firebase/dist/bundle.js"></script>
+
 <!-- <script src="../../MirageAdmin Blog/Admin.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <!-- <script src="./mirage.js"></script> -->

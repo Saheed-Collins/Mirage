@@ -55,13 +55,27 @@ onSnapshot(colRef, (collins)=>{
   display.innerHTML= ''
   collins.docs.forEach((sam)=>{
     //   console.log(sam.data(), );
-      display.innerHTML+=`
-       <div style="border: 1px solid green;" onclick="showBlogOne()">
-           <p>Title : ${sam.data().title}</p>
-           <span>descripton: ${sam.data().blogDescrip}</span>
-           <p>Author: ${sam.data().author}</p>
-           <span>${sam.id}</span>
-       </div>`
+      display.innerHTML+=
+      `
+
+      <div class=" col-lg-4 col-md-4 col-12 bg-white ">
+                    <div class="box">
+                        <!-- input image -->
+                        <img src="${sam.data().file}" alt="">
+                    </div>
+                    <h6 class="mt-2 smallHeading">
+                        ${sam.data().tagline}
+                        </h6>
+
+                   <a href="./EducationPagePost.html"> <h3 class="pt-1">
+                    ${sam.data().title}
+                   </h3></a>
+
+                    <p> ${sam.data().blogDescrip}</p>
+
+                    <button class="p-2 px-4 Hoverbtn"> <a href="./EducationPagePost.html"> View Posts</a></button>
+                </div>
+`
   })
 })
 // function showBlogOne(param){
@@ -92,8 +106,10 @@ form.addEventListener('submit', (e)=>{
   const title = form.title.value
   const blogDescrip = form.blogDescrip.value
   const author = form.author.value
+  const tagline = form.tagline.value
+  const image = form.image.file
 
-  addDoc(colRef, {title, blogDescrip, author, isPublish: false, })
+  addDoc(colRef, {title, blogDescrip, tagline, image, author, isPublish: false, })
   .then(()=>{
       form.reset()
       alert('blog posted successfully')
