@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" id="signUp">
+        <div>
+            <label for="password">Email:</label>
+            <input type="email" name="email">
+        </div>
+        <div>
+            <label for="password">password:</label>
+            <input type="password" name="password">
+        </div>
+
+        <button>Submit</button>
+    </form>
+
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/9.8.3/firebase-auth.js';
+
+
+  
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyBMwRHUannTVxavgMBPs0eUlZsaAkTlN-k",
+          authDomain: "fir-learn-4356a.firebaseapp.com",
+          projectId: "fir-learn-4356a",
+          storageBucket: "fir-learn-4356a.appspot.com",
+          messagingSenderId: "494844415846",
+          appId: "1:494844415846:web:feafce8a1ec09ba38802a7"
+        };
+      
+        // Initialize Firebase
+       const app = initializeApp(firebaseConfig);
+
+        
+        // console.log(auth);
+            const auth = getAuth(app)
+
+        signUp.addEventListener('submit', async(e)=>{
+            e.preventDefault()
+            const email = signUp.email.value
+            const password = signUp.password.value
+
+            try {
+                const res = await createUserWithEmailAndPassword(auth, email, password)
+                console.log('user created and logged in');
+            } catch (error) {
+                console.log(error);
+            }
+        })
+
+
+      </script>
+</body>
+</html>

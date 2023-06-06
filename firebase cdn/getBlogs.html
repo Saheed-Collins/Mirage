@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="display"></div>
+    <script>
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+        import { collection,getFirestore,getDocs, addDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBMwRHUannTVxavgMBPs0eUlZsaAkTlN-k",
+            authDomain: "fir-learn-4356a.firebaseapp.com",
+            projectId: "fir-learn-4356a",
+            storageBucket: "fir-learn-4356a.appspot.com",
+            messagingSenderId: "494844415846",
+            appId: "1:494844415846:web:feafce8a1ec09ba38802a7"
+        };
+
+        
+  // Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+
+
+
+const db = getFirestore(app)
+
+const colRef = collection(db, 'BlogPosts')
+
+          getDocs(colRef)
+          .then((sam)=>{
+            sam.forEach((doc)=>{
+                // blog.push(doc.data())
+
+                display.innerHTML+=`
+                <div style="border: 1px solid green;">
+                    <p>Title : ${doc.data().title}</p>
+                    <span>descripton: ${doc.data().blogDescrip}</span>
+                    <p>Author: ${doc.data().author}</p>
+                </div>
+                `
+            })
+
+          }).catch((error)=>{
+            console.log(error);
+          })
+
+  
+    </script>
+</body>
+</html>
