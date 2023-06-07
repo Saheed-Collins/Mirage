@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500&display=swap");
+* {
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+html {
+  background-color: black;
+}
+
+.saheed {
+  text-align: right;
+  align-items: right;
+}
+
+.HeroAdmin {
+  background-color: black;
+}
+.HeroAdmin .rightPanel {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.HeroAdmin .rightPanel .profileImage {
+  width: 50%;
+  height: 50%;
+  border-radius: 100%;
+  align-items: center;
+}
+.HeroAdmin .rightPanel .profileImage img {
+  width: 100%;
+}
+.HeroAdmin .rightPanel h6, .HeroAdmin .rightPanel p {
+  color: white;
+}
+.HeroAdmin .rightPanel .logout {
+  background-color: transparent;
+  color: white;
+}
+.HeroAdmin .rightPanel .logout:hover {
+  color: #ee4400;
+  background-color: white;
+}
+.HeroAdmin .rightPanel .bottonssAdmin {
+  background-color: rgb(25, 25, 25);
+  text-align: left;
+}
+.HeroAdmin .rightPanel .bottonssAdmin a {
+  text-decoration: none;
+}
+.HeroAdmin .rightPanel .bottonssAdmin .menuOpt {
+  cursor: pointer;
+}
+.HeroAdmin .rightPanel .bottonssAdmin .menuOpt:focus-within {
+  background-color: #ee4400;
+}
+.HeroAdmin .rightPanel .bottonssAdmin .menuOpt:hover {
+  background-color: #575757;
+}
+.HeroAdmin .rightPanel .homepageLink h6 {
+  font-size: 12px;
+}
+.HeroAdmin .rightPanel .homepageLink h6:hover {
+  color: #ee4400;
+}
+.HeroAdmin .rightPanel .homepageLink a {
+  text-decoration: none;
+}
+.HeroAdmin .rightPanel .homepageLink a:hover {
+  color: #ee4400;
+}
+.HeroAdmin #display_post {
+  background-image: url(https://images.unsplash.com/photo-1628072004495-19b19c64dee1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8&w=1000&q=80);
+  background-repeat: repeat;
+  background-size: auto;
+}
+.HeroAdmin #display_post .textHea {
+  font-size: 80px;
+  line-height: 80px;
+  color: white;
+}
+.HeroAdmin #display_post .textHea2 {
+  text-align: right;
+  font-size: 15px;
+  line-height: 30px;
+  color: white;
+}
+.HeroAdmin #display_post .textHea2 span {
+  color: #ee4400;
+}
+.HeroAdmin .leftSect1 {
+  background: rgb(255, 255, 255);
+  height: 100%;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.HeroAdmin .leftSect1 .leftSectContent {
+  color: rgb(58, 58, 58);
+}
+.HeroAdmin .leftSect1 .leftSectContent a {
+  color: white;
+  text-decoration: none;
+}
+.HeroAdmin .leftSect1 .leftSectContent .Hoverbtn {
+  border: none;
+  background-color: #ee4400;
+}
+.HeroAdmin .leftSect1 .leftSectContent .Hoverbtn:hover {
+  background-color: rgb(75, 0, 0);
+  transition: 0.5s ease-in;
+}
+.HeroAdmin .leftSect1 .leftSectContent .tableWrappe {
+  border: 0.5px solid rgb(215, 215, 215);
+  border-radius: 20px;
+  background-color: rgb(246, 246, 246);
+  max-height: 100%;
+}
+.HeroAdmin .leftSect1 .leftSectContent .tableWrappe table {
+  overflow-y: scroll;
+  font-size: 15px;
+  align-items: center;
+}
+.HeroAdmin .leftSect1 .leftSectContent .tableWrappe table .headeeer {
+  background-color: black;
+  color: white;
+}
+.HeroAdmin .leftSect1 .leftSectContent .tableWrappe table .spaceForTopic {
+  width: 30%;
+}
+.HeroAdmin .leftSect1 .leftSectContent .tableWrappe table .butomBord {
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.5px solid rgb(215, 215, 215);
+  cursor: pointer;
+}
+.HeroAdmin .leftSect1 .leftSectContent .tableWrappe table .butomBord:hover {
+  color: #ee4400;
+}
+.HeroAdmin .leftSect1 .leftSectContent .tableWrappe table img {
+  height: 40px;
+}
+.HeroAdmin .pagePost_toPush {
+  background: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.HeroAdmin .pagePost_toPush h6 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.HeroAdmin .pagePost_toPush input, .HeroAdmin .pagePost_toPush textarea {
+  box-shadow: #ee4400;
+  border: 0.5px solid rgb(203, 203, 203);
+  padding: 10px;
+  background-color: rgb(247, 247, 247);
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.HeroAdmin .pagePost_toPush input:focus, .HeroAdmin .pagePost_toPush textarea:focus {
+  outline: none;
+  background-color: white;
+}
+.HeroAdmin .pagePost_toPush #tagline, .HeroAdmin .pagePost_toPush #topic {
+  width: 100%;
+  height: 70px;
+}
+.HeroAdmin .pagePost_toPush #intro {
+  width: 100%;
+}
+.HeroAdmin .pagePost_toPush #body {
+  width: 100%;
+  height: 150px;
+}
+.HeroAdmin .pagePost_toPush .Hoverbtn {
+  background-color: #ee4400;
+  color: white;
+  border: none;
+}
+.HeroAdmin .pagePost_toPush .Hoverbtn a {
+  text-decoration: none;
+  color: white;
+}
+.HeroAdmin .pagePost_toPush .Hoverbtn:hover {
+  background-color: rgb(105, 26, 0);
+}
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 400px;
+  overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+  display: block;
+}

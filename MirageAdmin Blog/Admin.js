@@ -1,5 +1,4 @@
 
-
 // const display = document.querySelector("#display_post")
 let displayPost = document.getElementById("display_post")
 let menuOpt = document.getElementById('menuOpt')
