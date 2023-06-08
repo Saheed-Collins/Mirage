@@ -42,9 +42,9 @@
                               <h6><i class="bi bi-person-circle px-2"></i> Add New </h6>
                             </div>
          -->
-                            <div onclick="addBlog_Post()" id="menuOpt2"  class=" p-2 menuOpt m-2 rounded py-2"><h6><i class="bi bi-stickies-fill px-2"></i>Add New Post</h6></div>
+                            <div  onclick="scrollWin()" id="menuOpt2 downButton"  class=" p-2 menuOpt m-2 rounded py-2"> <button class="newPost"><i class="bi bi-stickies-fill px-2"></i>Add New Post</button></div>
         
-                            <div onclick="readersPost()" id="menuOpt3" class=" p-2 menuOpt m-2 rounded py-2"><h6> <i class="bi bi-bookmark-heart-fill px-2"></i> Readers</h6></div>
+                            <div onclick="checkDataBase()" id="menuOpt3" class=" p-2 menuOpt m-2 rounded py-2"><h6> <i class="bi bi-bookmark-heart-fill px-2"></i><a href="https://console.firebase.google.com/u/0/project/fir-learn-4356a/firestore/data/~2FBlogPosts~2F5SkCUkH6CLsV2rGA1Odl">Check Database</a> </h6></div>
                             
                             <!-- <div id="menuOpt4" class="p-2 menuOpt m-2 rounded">
                               
@@ -75,9 +75,9 @@
           </div>   
   </div>
           
-            
+            <br><br><br><br>
     
-<form action="" class="formBlogData p-4" >
+<form action="" class="formBlogData p-5" >
 
 <div class="pagePost_toPush col-12 col-md-9 col-lg-10 p-4" id="pagePost_toPush ">
 
@@ -99,28 +99,28 @@
         <!-- TAGLINE -->
         <div class="col-12 col-md-3 col-lg-3"> 
                     <h6 class="">Tagline</h6>
-                    <input type="text" name="tagline" id="tagline" placeholder="Tagline">
+                    <input type="text" name="tagline" id="tagline" placeholder="Tagline" required>
         </div> <br>
         <!-- title -->
         <div class="col-12 col-md-3 col-lg-3">
            <h6 class="">Topic</h6>
-            <input type="text" name="title">
+            <input type="text" name="title" required id="title">
         </div> <br>
         <!-- description  -->
         <div class="col-12 col-md-3 col-lg-6">
             <label for="blogDescrip"></label>
             <h6 class="">Little Intro</h6>
-            <textarea type="text" name="blogDescrip" spellcheck="true" id="intro"> </textarea>
+            <textarea type="text" name="blogDescrip" spellcheck="true" id="intro" required> </textarea>
         </div>
     </div> <br>
         <!-- body -->
         <div>
             <label for="author"></label>
             <h6 class="">Body</h6>
-            <textarea type="text" name="author" id="body" spellcheck="true" > </textarea>
+            <textarea type="text" name="author" id="body" spellcheck="true" required > </textarea>
         </div>  <br>
         <!-- body end -->
-        <button class="p-2 px-4 Hoverbtn">Upload blog</button>
+        <button onclick="scrollBackTop()" class="p-2 px-4 Hoverbtn">Upload blog</button>
     </div>
     </div>
 </div>
@@ -134,10 +134,31 @@
     
     
 
-        <div id="display"></div>
+        <!-- <div id="display"></div> -->
     <script src="./index.js" type="module"></script>
 
+<script>
+    let downButton = document.getElementById('downButton')
+function scrollWin() {
+    window.scrollBy(0, 2000);
+}
+function scrollBackTop() {
 
+    let tagline = document.getElementById('tagline')
+    let title = document.getElementById('title')
+    let intro = document.getElementById('intro')
+    let body = document.getElementById('body')
+
+    
+    if (tagline.value == '') {
+        window.scrollBy(0, 2000);
+    } else {
+        setTimeout(() => {
+        window.scrollBy(0, -2000);
+  }, 3000);
+    }
+}
+</script>
     <!-- <script src="../MirageAdmin Blog/Admin.js"></script> -->
 </body>
 </html>

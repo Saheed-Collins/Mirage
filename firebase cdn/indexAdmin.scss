@@ -49,15 +49,32 @@ html {
            text-align: left; 
            a {
                 text-decoration: none;
+                
             } 
+        //     .grid-container {
+        //         display: grid;
+        //         flex-wrap: wrap;
+        //         grid-template-columns: auto auto auto;
+        //   grid-gap: 10px;
+        //   padding: 10px;
+        //     }
          .menuOpt {
             cursor: pointer;
             &:focus-within{
             background-color: #ee4400;
             }
+
+            a {
+                color: white;
+            }
+            button {
+                background-color: transparent;
+                border: none;
+                color: white;
+            }
          }   
          .menuOpt:hover {
-            background-color: #575757;
+            background-color: #ee4400;
          }
         }
         .homepageLink{
@@ -221,3 +238,5 @@ html {
     .table-wrapper-scroll-y {
     display: block;
     }
+
+ 
