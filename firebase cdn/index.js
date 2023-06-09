@@ -42,8 +42,8 @@ onSnapshot(colRef, (collins)=>{
     //   console.log(sam.data(), );
       display.innerHTML+=
       `
-    <div class=" grid-container gap-4 d-flex flex-wrap">
-          <div class=" col-lg-4 col-md-4 col-12 bg-info w-100 ">
+    
+          <div class=" col-lg-4 col-md-4 col-12 mb-3 ">
 
           <div class="box">
           <!-- input image -->
@@ -60,7 +60,7 @@ onSnapshot(colRef, (collins)=>{
           </button>
 
           </div>
-      </div> <br>
+      </div>
 `
   })
 })
