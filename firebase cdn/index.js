@@ -3,6 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebas
 import { collection,getFirestore,getDocs, addDoc,getDoc, onSnapshot, query,where, 
     // to get one particular item i databse
     doc } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+    
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -34,13 +35,15 @@ let blog = []
 
 
 let display = document.getElementById('displayEachPost')
+let displayLargerPost = document.getElementById('displayLargerPost')
+
 onSnapshot(colRef, (collins)=>{
   
   // display.innerHTML= ''
 
   collins.docs.forEach((sam)=>{
     //   console.log(sam.data(), );
-      display.innerHTML+=
+      display.innerHTML =
       `
     
           <div class=" col-lg-4 col-md-4 col-12 mb-3 ">
@@ -61,7 +64,37 @@ onSnapshot(colRef, (collins)=>{
 
           </div>
       </div>
-`
+      `
+
+      displayLargerPost.innerHTML = 
+      `
+      <div class=" eachPost  bg-white ">
+
+        <!-- tagline -->
+        <h6 class="mt-2 smallHeading">${sam.data().tagline}</h6>
+      </h6>
+    
+    <!-- topic -->
+            <h3 class="pt-1" id="postHeading">${sam.data().title}</h3>
+        
+            <!-- blog description -->
+        <p id="postSmall">${sam.data().blogDescrip} </p>
+    
+    <!-- image -->
+        <div class="box" id="postImage">
+            <img src="${sam.data().file}" alt="">
+    
+        </div>
+        <!-- blog body -->
+    <div>
+        <p class="py-2 postBody" id="postBody"> ${sam.data().author} </p>
+    
+    </div> 
+    
+    </div> 
+    <button class="p-2 px-4 Hoverbtn"><a href="./EducationSection.html"> BACK TO POSTS</a></button> 
+      
+      `
   })
 })
 // function showBlogOne(param){
@@ -93,9 +126,11 @@ form.addEventListener('submit', (e)=>{
   const blogDescrip = form.blogDescrip.value
   const author = form.author.value
   const tagline = form.tagline.value
-  // const image = form.image.file
+  const image = form.image.file
+  const body = form.postBody.value
 
-  addDoc(colRef, {title, blogDescrip, tagline, author, isPublish: false, })
+
+  addDoc(colRef, {title, blogDescrip, tagline, author, image, body, isPublish: false, })
   .then(()=>{
       form.reset()
       alert('blog posted successfully')
